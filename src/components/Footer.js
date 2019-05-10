@@ -3,20 +3,23 @@ import styled from 'styled-components';
 const Footer = () => {
   const StyledFooter = styled.div`
     width: 95%;
-    margin: auto;
+    margin: 5% auto;
     text-align: center;
     padding: 5% 0;
-    color: #2b251f;
+    color: #174a45;
+    border: solid 1px #174a45;
     font-style: italic;
+    background-color: white;
   `;
   const StyledLink = styled.a`
     color: inherit;
     text-decoration: none;
     padding: 0.8%;
-    border: solid 1.2px #2b251f;
+    border: solid 1.2px #174a45;
     font-style: normal;
     &:hover {
-      background-color: white;
+      background-color: #174a45;
+      color: white;
     }
   `;
   return (
@@ -27,7 +30,8 @@ const Footer = () => {
       <StyledLink href="mailto:lubnanaqvi11@gmail.com">Email me</StyledLink>
       <br />
       <br />
-      &copy; 2019 Lubna Naqvi - Front end web developer &amp; UI/UX enthusiast
+      &copy; 2019 Lubna Naqvi - Front end &#123;web&#125; developer &amp; UI/UX
+      enthusiast
     </StyledFooter>
   );
 };

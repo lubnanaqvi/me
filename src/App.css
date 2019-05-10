@@ -1,6 +1,6 @@
 body {
   background-image: linear-gradient(
-    to right bottom,
+    to bottom right,
     #ff6f61,
     #edaa86,
     #d8b998,
@@ -9,3 +9,26 @@ body {
   );
   background-repeat: no-repeat;
 }
+/* 
+OG:
+#ff6f61,
+#edaa86,
+#d8b998,
+#ce9e88,
+#766553 */
+/*
+BROWNS:
+#a57a5a,
+#cc9767,
+#c7ad7f,
+#a07855*/
+/*footer writing color:#2b251f*/
+/*
+GREENS
+#8ebba7,
+#9dc183,
+#a6bc9b,
+#a7d2af,
+#74907a,
+#4c7057
+*/

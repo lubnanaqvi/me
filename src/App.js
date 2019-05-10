@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectGrid from './components/ProjectGrid';
 import './App.css';
-import bg from './squares.png';
 import AnimatedBackGround from './components/AnimatedBackGround';
 import DecoParallax from './components/DecoParallax';
 import pimg from './web.jpg';

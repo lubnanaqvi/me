@@ -6,17 +6,17 @@ const Footer = () => {
     margin: auto;
     text-align: center;
     padding: 5% 0;
-
-    color: rgba(255, 255, 255, 0.9);
+    color: #2b251f;
+    font-style: italic;
   `;
   const StyledLink = styled.a`
     color: inherit;
     text-decoration: none;
     padding: 0.8%;
-    border: solid 1px white;
+    border: solid 1.2px #2b251f;
+    font-style: normal;
     &:hover {
       background-color: white;
-      color: #766553;
     }
   `;
   return (

@@ -14,8 +14,8 @@ const StyledSpan = styled.div`
     transform: rotate(-90deg) translate(-270px, -425px);
     width: 500px;
   }
-  @media (max-width: 800px) {
-    width: 90% !important;
+  @media (max-width: 825px) {
+    width: 95% !important;
     margin: auto;
     transition: none !important;
     transform: none !important;

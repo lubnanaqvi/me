@@ -22,8 +22,8 @@ const ProjectGrid = () => {
     grid-template-rows: 1fr 25px 1fr 1fr 1fr 20px 1fr 15px 1fr 30px;
     background-color: #fa7268;
     color: white;
-    @media (max-width: 800px) {
-      width: 90%;
+    @media (max-width: 825px) {
+      width: 95%;
       margin: auto;
     }
   `;

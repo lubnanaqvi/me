@@ -11,8 +11,8 @@ const DecoParallax = ({ height, width, bgUrl, smallBgUrl }) => {
     height: ${height};
     width: ${width};
     margin: 100px auto;
-    @media (max-width: ${width}) {
-      width: 100%;
+    @media (max-width: 825px) {
+      width: 95%;
       background: url(${smallBgUrl});
       bakground-repeat: no-repeat;
       background-size: cover;

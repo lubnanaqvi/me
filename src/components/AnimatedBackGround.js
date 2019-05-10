@@ -9,9 +9,7 @@ const AnimatedBackGround = () => {
   });
   return (
     <div>
-      <StyledDiv hideOverflow>
-        <AnimatedName />
-      </StyledDiv>
+      <AnimatedName />
       <StyledDiv expand>{bgSquares}</StyledDiv>
     </div>
   );

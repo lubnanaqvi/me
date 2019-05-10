@@ -17,10 +17,17 @@ const AnimatedName = () => {
       cursor: 'pointer'
     };
   };
-  const StyledDiv = styled.div``;
+  const StyledDiv = styled.div`
+    width: 90%;
+    height: 500px;
+    overflow: hidden;
+  `;
+  const StyledSvg = styled.svg`
+    enable-background: new 0 0 1366 768;
+  `;
   return (
     <StyledDiv>
-      <svg
+      <StyledSvg
         version="1.1"
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +100,7 @@ const AnimatedName = () => {
         z"
           />
         </g>
-      </svg>
+      </StyledSvg>
     </StyledDiv>
   );
 };

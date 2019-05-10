@@ -9,20 +9,24 @@ const AnimatedSquare = ({ square }) => {
     stroke-dasharray: 0px;
     stroke-dashoffset: 0px;
   `;
+  const StyledSvg = styled.svg`
+    display: inline-block;
+    overflow: visible;
+    width: 10%;
+    transform: rotate(${rotated}deg);
+    @media (max-width: 600px) {
+      width: 15%;
+      margin: 2%;
+    }
+  `;
   return (
-    <svg
+    <StyledSvg
       version="1.1"
       id="Layer_1"
       x="0px"
       y="0px"
-      width="10%"
       viewBox="0 0 340 333"
       enableBackground="new 0 0 340 333"
-      style={{
-        display: `inline-block`,
-        overflow: `visible`,
-        transform: `rotate(${rotated}deg)`
-      }}
     >
       <StyledPath
         id="sqPath"
@@ -33,7 +37,7 @@ const AnimatedSquare = ({ square }) => {
         }}
         d={`M${ax},${ay} L${bx},${by} L${cx},${cy} L${dx},${dy} L${ax},${ay}`}
       />
-    </svg>
+    </StyledSvg>
   );
 };
 export default AnimatedSquare;

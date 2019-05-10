@@ -15,7 +15,7 @@ const Header = () => {
   });
   const StyledHeader = styled.div`
     width: 95%;
-    margin: auto;
+    margin: 3% auto;
     text-align: right;
     color: rgba(255, 255, 255, 0.9);
     position: fixed;

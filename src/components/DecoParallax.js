@@ -18,6 +18,9 @@ const DecoParallax = ({ height, width, bgUrl, smallBgUrl }) => {
       background-size: cover;
       background-attachment: fixed;
     }
+    @media (pointer: coarse) {
+      display: none;
+    }
   `;
 
   return <StyledDiv />;

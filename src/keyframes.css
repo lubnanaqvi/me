@@ -45,7 +45,15 @@
 }
 @keyframes dash {
   from {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 1200px;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dPath {
+  from {
+    stroke-dashoffset: 1000px;
   }
   to {
     stroke-dashoffset: 0;

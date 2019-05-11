@@ -2,6 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import '../keyframes.css';
 const AnimatedName = () => {
+  const StyledDiv = styled.div`
+    width: 60%;
+    height: 500px;
+    overflow: visible;
+    display: inline-block;
+    vertical-align: middle;
+    @media (max-width: 600px) {
+      height: 300px;
+    }
+  `;
   const StyledPath = styled.path`
     stroke: white;
     stroke-width: 2px;
@@ -17,28 +27,16 @@ const AnimatedName = () => {
       cursor: 'pointer'
     };
   };
-  const StyledDiv = styled.div`
-    width: 90%;
-    height: 500px;
-    overflow: hidden;
-  `;
-  const StyledSvg = styled.svg`
-    enable-background: new 0 0 1366 768;
-  `;
   return (
     <StyledDiv>
-      <StyledSvg
+      <svg
         version="1.1"
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        viewBox="0 0 1366 768"
-        style={{
-          enableBackground: 'new 0 0 1366 768',
-          width: '150%',
-          height: '150%'
-        }}
+        viewBox="280 120 500 500"
+        enableBackground="new 280 120 500 500"
       >
         <g>
           <StyledPath
@@ -72,7 +70,7 @@ const AnimatedName = () => {
           />
           <StyledPath
             id="npath"
-            style={letterPathStyles(7.5, 'N-anim')}
+            style={letterPathStyles(6, 'N-anim')}
             d="M591.3,345.5l9.7-2.2c1.2-0.3,2.1-0.9,2.9-1.8c0.7-0.9,1.1-2,1.1-3.3v-58.6c0-1.5-0.4-2.8-1.2-3.9
         c-0.8-1.1-2.3-2-4.3-2.7l-8.2-2.9v-2.4l28.2-6.1V276c2.3-3.1,4.5-5.7,6.8-7.7c2.3-2,4.6-3.5,6.9-4.6c2.3-1.1,4.7-1.8,7-2.2
         c2.4-0.4,4.8-0.6,7.2-0.6c3.9,0,7.5,0.6,10.8,1.7c3.4,1.2,6.3,3,8.8,5.4c2.5,2.5,4.4,5.6,5.9,9.5c1.4,3.9,2.1,8.5,2.1,13.9v46.4
@@ -100,7 +98,7 @@ const AnimatedName = () => {
         z"
           />
         </g>
-      </StyledSvg>
+      </svg>
     </StyledDiv>
   );
 };

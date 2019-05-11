@@ -1,14 +1,60 @@
 body {
   background-image: linear-gradient(
-    to bottom right,
+    to bottom left,
     #ff6f61,
     #edaa86,
-    #d8b998,
+    #cca67f,
     #ce9e88,
-    #766553
+    #766553,
+    #174a45
   );
   background-repeat: no-repeat;
 }
+/*
+blues and greens nicer
+#8ebba7,
+#9dc183,
+#a6bc9b,
+#a7d2af,
+#009499
+*/
+/* 
+MAUVES
+#c2877b,
+#cca67f,
+#d8b998,
+#ce9e88,
+#766553
+*/
+/*SYMPATICO
+#ff6f61,
+#7e392f,
+#c2877b,
+#edaa86,
+#ea6676,
+#f8a39d,
+#cca67f,
+#d8b998,
+#ce9e88,
+#766553
+*/
+/*
+BLUE WITH GREEN
+#195190,
+#009499,
+#81894e,
+#ffda29,
+#98ddde
+/*
+PANTONE SCHEME
+#fc8f9b,
+#e55982,
+#e881a6,
+#ff6f61,
+#fc9e21,
+#dc793e,
+#fea166
+*/
 /* 
 OG:
 #ff6f61,
@@ -31,4 +77,4 @@ GREENS
 #a7d2af,
 #74907a,
 #4c7057
-*/
+ */

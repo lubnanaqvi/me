@@ -11,7 +11,8 @@ const StyledDiv = styled.div`
   transition: transform 1s linear;
   border: solid 1px black;
   @media (max-width: 825px) {
-    width: 95% !important;
+    box-sizing: border-box;
+    width: 100% !important;
     margin: auto;
     transition: none !important;
     transform: none !important;

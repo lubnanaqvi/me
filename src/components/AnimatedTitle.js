@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledSpan = styled.div`
+const StyledDiv = styled.div`
   font-size: 2em;
   cursor: pointer;
   background-color: #174a45;
@@ -10,10 +10,6 @@ const StyledSpan = styled.div`
   margin: auto;
   transition: transform 1s linear;
   border: solid 1px black;
-  &:hover {
-    transform: rotate(-90deg) translate(-270px, -425px);
-    width: 500px;
-  }
   @media (max-width: 825px) {
     width: 95% !important;
     margin: auto;
@@ -21,5 +17,17 @@ const StyledSpan = styled.div`
     transform: none !important;
   }
 `;
-const AnimatedTitle = ({ title }) => <StyledSpan>{title}</StyledSpan>;
+const HeadingHolder = styled.div`
+  width: 95%;
+  margin: auto;
+  &:hover #h {
+    transform: rotate(-90deg) translate(-270px, -425px);
+    width: 500px;
+  }
+`;
+const AnimatedTitle = ({ title }) => (
+  <HeadingHolder>
+    <StyledDiv id="h">{title}</StyledDiv>
+  </HeadingHolder>
+);
 export default AnimatedTitle;

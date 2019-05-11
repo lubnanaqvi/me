@@ -24,7 +24,7 @@ const AnimatedDecor = ({ pathData }) => {
         style={{
           strokeDasharray: 1000,
           strokeDashoffset: 100,
-          animation: `dPath 20s linear`
+          animation: `dPath 15s ease-out`
         }}
         d={p}
         key={i}

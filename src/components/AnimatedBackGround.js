@@ -12,6 +12,7 @@ const AnimatedBackGround = () => {
     height: 500px;
     width: ${props => (props.expand ? '90%' : '50%')};
     overflow: ${props => (props.hideOverflow ? 'hidden' : 'visible')};
+    max-width: 800px;
     @media (max-width: 600px) {
       height: 300px;
     }

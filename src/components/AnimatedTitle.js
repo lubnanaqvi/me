@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
   margin: auto;
   transition: transform 1s linear;
   border: solid 1px black;
-  @media (max-width: 825px) {
+  @media (max-width: 850px) {
     box-sizing: border-box;
     width: 100% !important;
     margin: auto;

@@ -4,9 +4,7 @@ import ProjectCard from './ProjectCard';
 class ProjectLink extends React.Component {
   constructor(props) {
     super(props);
-
     this.handleClick = this.handleClick.bind(this);
-
     this.state = {
       isProjectDetailOpen: false
     };

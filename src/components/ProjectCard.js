@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import ViewProject from './ViewProject';
 
 const ProjectCard = ({ projectData, isProjectDetailOpen }) => {
-  const { title, desc, tech, link } = projectData;
+  const { title, desc, tech, link, pic } = projectData;
   const StyledProjectCard = styled.div`
     display: ${isProjectDetailOpen ? 'block' : 'none'};
     width: 700px;
@@ -19,7 +19,7 @@ const ProjectCard = ({ projectData, isProjectDetailOpen }) => {
     border: solid 1px black;
     box-sizing: border-box;
     padding: 2%;
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
       width: 85% !important;
       margin: 0;
       min-height: 400px;
@@ -31,7 +31,7 @@ const ProjectCard = ({ projectData, isProjectDetailOpen }) => {
       <ProjectHeading title={title} />
       <ProjectDesc desc={desc} />
       <ProjectTech tech={tech} />
-      <ViewProject link={link} />
+      <ViewProject link={link} pic={pic} />
     </StyledProjectCard>
   );
 };

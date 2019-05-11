@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-const ViewProject = ({ link }) => {
+import codepic from '../coding.jpg';
+const ViewProject = ({ link, pic }) => {
   const StyledLink = styled.a`
     border: solid 1px black;
     padding: 1%;
@@ -15,6 +16,15 @@ const ViewProject = ({ link }) => {
       color: white;
     }
   `;
-  return link ? <StyledLink href={link}>View Project</StyledLink> : null;
+  if (link) return <StyledLink href={link}>View Project</StyledLink>;
+  else if (pic) {
+    const StyledImg = styled.img`
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+    `;
+    return <StyledImg src={codepic} />;
+  } else return null;
 };
 export default ViewProject;

@@ -9,7 +9,7 @@ const ProjectHeading = ({ title }) => {
     color: white;
     text-align: left;
     @media (max-width: 800px) {
-      top: 50%;
+      top: 210px;
       left: -57%;
     }
   `;

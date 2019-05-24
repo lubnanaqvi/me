@@ -2,18 +2,19 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const DecoParallax = ({ height, width, bgUrl, smallBgUrl }) => {
+const SlantedImg = ({ bgUrl, smallBgUrl }) => {
   const StyledDiv = styled.div`
     position: relative;
-    top: 400px;
+    top: 100px;
+    z-index: -2;
+    background-color: black;
     background: url(${bgUrl});
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: ${height};
-    width: ${width};
+    height: 600px;
+    width: 100%;
     margin: 100px auto;
-    filter: grayscale(100%);
     @media (max-width: 825px) {
       width: 95%;
       background: url(${smallBgUrl});
@@ -21,17 +22,9 @@ const DecoParallax = ({ height, width, bgUrl, smallBgUrl }) => {
       background-size: cover;
       background-attachment: fixed;
     }
-    @media (pointer: coarse) {
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
   `;
 
-  return (
-    <StyledDiv>
-      <div style={{ backgroundColor: 'rgba(0,0,0,0.8)', height: height }} />
-    </StyledDiv>
-  );
+  return <StyledDiv />;
 };
 
-export default DecoParallax;
+export default SlantedImg;

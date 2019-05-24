@@ -7,18 +7,16 @@ import pimg from './web.jpg';
 import spimg from './web_small.jpg';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Intro from './components/Intro';
+import SlantedImg from './components/SlantedImg';
 
 const App = () => {
   return (
     <div>
       <Header />
       <AnimatedBackGround />
-      <DecoParallax
-        bgUrl={pimg}
-        smallBgUrl={spimg}
-        height="500px"
-        width="800px"
-      />
+      <Intro />
+      <SlantedImg bgUrl={pimg} smallBgUrl={spimg} />
       <ProjectGrid />
       <Footer />
     </div>

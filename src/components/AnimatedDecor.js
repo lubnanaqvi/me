@@ -4,12 +4,9 @@ const AnimatedDecor = ({ pathData }) => {
   const StyledDiv = styled.div`
     display: inline-block;
     vertical-align: middle;
-    height: 500px;
-    width: 30%;
+    height: 300px;
+    width: 45%;
     margin: auto;
-    @media (max-width: 600px) {
-      height: 300px;
-    }
   `;
   const StyledPath = styled.path`
     stroke: white;
@@ -18,15 +15,15 @@ const AnimatedDecor = ({ pathData }) => {
     stroke-dasharray: 0px;
     stroke-dashoffset: 0px;
   `;
-  const deco = pathData.path.map((p, i) => {
+  const deco = pathData.map((p, i) => {
     return (
       <StyledPath
         style={{
           strokeDasharray: 1000,
           strokeDashoffset: 100,
-          animation: `dPath 15s ease-out`
+          animation: `dPath 5s ease-out ${p.delay}s forwards infinite`
         }}
-        d={p}
+        d={p.path}
         key={i}
       />
     );
@@ -38,8 +35,8 @@ const AnimatedDecor = ({ pathData }) => {
         id="Layer_1"
         x="0px"
         y="0px"
-        viewBox="0 -100 500 500"
-        enableBackground="new -100 100 500 500"
+        viewBox="-550 0 1000 1000"
+        enableBackground="new -450 100 1500 1500"
       >
         {deco}
       </svg>

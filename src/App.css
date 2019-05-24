@@ -1,15 +1,45 @@
 body {
-  background-image: linear-gradient(
+  background-color: white;
+}
+/* PEACHES linear-gradient(to right bottom, #fec39d, #f0b990, #edaa86); */
+/*
+263056 - the good blue
+#174a45 - good green
+whites
+#f7f7f7,
+    #f1f1ef,
+    #f7f4e9,
+    #f6f6f8,
+    #fefefe,
+    #f6f4f2,
+    #f5f5f5
+*/
+/*
+blacks
+ to bottom right,
+    #18181e,
+    #1d2228,
+    #373a36,
+    #151617,
+    #090a0a,
+    #151516,
+    #000000,
+    #181818,
+    #0a0a0a,
+    #48484a,
+    #373833,
+    #191919
+*/
+/*
+May 11:
     to bottom left,
     #ff6f61,
     #edaa86,
     #cca67f,
     #ce9e88,
     #d8b998,
-    #c2877b
-  );
-  background-repeat: no-repeat;
-}
+    #c2877b,
+*/
 /*
 blues and greens nicer
 #8ebba7,

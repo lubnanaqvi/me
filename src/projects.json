@@ -19,8 +19,15 @@
     "link": "https://derbend.000webhostapp.com/hfr.html"
   },
   {
+    "id": "3",
+    "title": "git Query",
+    "tech": ["React", "Redux", "Tachyons", "GitHub API"],
+    "desc": "This was my personal project at Bridge-school. It allows the user to enter their git handle and then uses the events and repos endpoints of GitHub API to retrieve their recent data and display all their recent Forked events and PRs. I deployed it on firebase.",
+    "link": "https://gitquery11.firebaseapp.com/"
+  },
+  {
     "id": "2",
-    "title": "SpeakEasy",
+    "title": "Speak Easy",
     "tech": [
       "React",
       "Redux",
@@ -33,13 +40,6 @@
     ],
     "desc": "This was my final group project at Bridge-school. This website allows conference organizers and speakers to retrieve a list of all conferences from firebase, and add more using a form. The project consisted of creating API endpoints for POST and GET in a separate backend repo, while using react-redux in the frontend. It was auto deployed from Git.",
     "link": "http://speak-easy-frontend.bridgeschoolapp.io/"
-  },
-  {
-    "id": "3",
-    "title": "gitQuery",
-    "tech": ["React", "Redux", "Tachyons", "GitHub API"],
-    "desc": "This was my personal project at Bridge-school. It allows the user to enter their git handle and then uses the events and repos endpoints of GitHub API to retrieve their recent data and display all their recent Forked events and PRs. I deployed it on firebase.",
-    "link": "https://gitquery11.firebaseapp.com/"
   },
   {
     "id": "4",

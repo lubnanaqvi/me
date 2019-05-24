@@ -14,11 +14,13 @@ const Header = () => {
     );
   });
   const StyledHeader = styled.div`
-    width: 95%;
-    margin: 3% auto;
+    width: 90%;
+    margin: 1% auto;
     text-align: right;
-    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(65, 43, 25, 0.3);
+    color: white;
     position: fixed;
+    left: 5%;
     z-index: 1000 !important;
   `;
 

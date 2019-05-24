@@ -8,7 +8,7 @@ const SVGIcon = ({ link, iconName, paths }) => {
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
-    stroke: white;
+    stroke: #174a45;
     fill: transparent;
     stroke-width: 0;
     stroke: currentColor;

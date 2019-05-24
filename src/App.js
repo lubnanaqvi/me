@@ -25,13 +25,7 @@ const App = () => {
 
 export default App;
 /*
--add links to projects
--deploy gitQuery
--header footer logo git and linkedin links?
--background component canvas <draw squares, write front end web developer live>
 -add cv  
--replace slackD with RSVP for now
--make responsive 930px
--npm build and deploy to porfolio on github
-
+-remove unnecessary stuff i.e. code cleanup
+-add side nav bar
 */

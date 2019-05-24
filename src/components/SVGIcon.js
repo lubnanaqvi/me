@@ -14,6 +14,9 @@ const SVGIcon = ({ link, iconName, paths }) => {
     stroke: currentColor;
     fill: currentColor;
     padding: 1%;
+    @media (pointer: coarse) {
+      padding: 3%;
+    }
   `;
   const StyledLink = styled.a`
     color: inherit;

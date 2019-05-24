@@ -22,6 +22,9 @@ const SlantedImg = ({ bgUrl, smallBgUrl }) => {
       background-size: cover;
       background-attachment: fixed;
     }
+    @media (pointer: coarse) {
+      background-attachment: scroll;
+    }
   `;
 
   return <StyledDiv />;

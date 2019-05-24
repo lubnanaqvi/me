@@ -7,6 +7,7 @@ const ProjectHeading = ({ title }) => {
     top: 0px;
     left: -370px;
     color: white;
+    text-align: left;
     @media (max-width: 800px) {
       top: 50%;
       left: -57%;

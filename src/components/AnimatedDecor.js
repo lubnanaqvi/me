@@ -28,6 +28,11 @@ const AnimatedDecor = ({ pathData }) => {
       />
     );
   });
+  const ww = window.innerWidth;
+  const wh = window.innerHeight;
+  const viewBoxWidth = ww > 625 ? 1000 : 500;
+  const viewBoxHeight = wh > 625 ? 1000 : 500;
+  const viewBoxHorizontalOffset = ww > 625 ? -550 : 0;
   return (
     <StyledDiv>
       <svg
@@ -35,8 +40,9 @@ const AnimatedDecor = ({ pathData }) => {
         id="Layer_1"
         x="0px"
         y="0px"
-        viewBox="-550 0 1000 1000"
-        enableBackground="new -450 100 1500 1500"
+        viewBox={
+          viewBoxHorizontalOffset + ' 0 ' + viewBoxWidth + ' ' + viewBoxHeight
+        }
       >
         {deco}
       </svg>

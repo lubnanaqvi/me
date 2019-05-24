@@ -25,6 +25,10 @@ const AnimatedName = () => {
       cursor: 'pointer'
     };
   };
+  const ww = window.innerWidth;
+  const wh = window.innerHeight;
+  const viewBoxWidth = ww > 625 ? 1000 : 500;
+  const viewBoxHeight = wh > 625 ? 1000 : 500;
   return (
     <StyledDiv>
       <svg
@@ -33,8 +37,7 @@ const AnimatedName = () => {
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        viewBox="280 50 1000 1000"
-        enableBackground="new 280 120 1500 1500"
+        viewBox={'280 50 ' + viewBoxWidth + ' ' + viewBoxHeight}
       >
         <g>
           <StyledPath

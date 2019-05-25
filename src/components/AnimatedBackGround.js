@@ -5,7 +5,6 @@ import path from '../tree.json';
 import styled from 'styled-components';
 const AnimatedBackGround = () => {
   const StyledDiv = styled.div`
-    padding-top: 100px;
     height: 300px
     background-color: #ff6f61;
     position:relative;
@@ -20,6 +19,12 @@ const AnimatedBackGround = () => {
     transform: skewY(5deg);
     transform-origin: 0%;
     z-index: -1;
+    }
+    @media( max-width:470px){
+      height:200px;
+      &::after{
+        transform:skewY(15deg);
+      }
     }
   `;
 

@@ -30,8 +30,9 @@ const ProjectGrid = () => {
   const StyledDiv = styled.div`
     background-color: white;
     position: relative;
+    top: -150px;
+    padding-top: 50px;
     text-align: center;
-    padding-top: 100px;
     &::before {
       content: '';
       background-color: white;
@@ -43,6 +44,11 @@ const ProjectGrid = () => {
       transform: skewY(5deg);
       transform-origin: 100%;
       z-index: -1;
+    }
+    @media (max-width: 470px) {
+      &::before {
+        transform: skewY(15deg);
+      }
     }
   `;
   return (

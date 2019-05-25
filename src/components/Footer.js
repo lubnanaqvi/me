@@ -17,7 +17,7 @@ const Footer = () => {
     background-image: linear-gradient(to right, #280e04, #563012, #80522b);
     color: white;
     position: relative;
-    top: 200px;
+    top: 50px;
     text-align: center;
     padding: 100px 0;
     &::before {
@@ -31,6 +31,11 @@ const Footer = () => {
       transform: skewY(5deg);
       transform-origin: 100%;
       z-index: -1;
+    }
+    @media (max-width: 470px) {
+      &::before {
+        transform: skewY(15deg);
+      }
     }
   `;
   return (

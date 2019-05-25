@@ -5,7 +5,6 @@ import styled from 'styled-components';
 const SlantedImg = ({ bgUrl, smallBgUrl }) => {
   const StyledDiv = styled.div`
     position: relative;
-    top: 100px;
     z-index: -2;
     background-color: black;
     background: url(${bgUrl});
@@ -16,7 +15,6 @@ const SlantedImg = ({ bgUrl, smallBgUrl }) => {
     width: 100%;
     margin: 100px auto;
     @media (max-width: 825px) {
-      width: 95%;
       background: url(${smallBgUrl});
       bakground-repeat: no-repeat;
       background-size: cover;

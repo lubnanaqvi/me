@@ -8,6 +8,7 @@ const StyledDiv = styled.div`
   color: white;
   width: 800px;
   margin: auto;
+  text-align: left;
   transition: transform 1s linear;
   border: solid 1px black;
   @media (max-width: 850px) {

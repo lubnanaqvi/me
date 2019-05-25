@@ -6,7 +6,7 @@ const Intro = () => {
     height: 300px
     background-color: white;
     position:relative;
-    top:200px;
+    top:120px;
     text-align:center;
     padding-bottom:100px;
     &::after {
@@ -20,6 +20,12 @@ const Intro = () => {
     transform: skewY(5deg);
     transform-origin: 0%;
     z-index: -1;
+    }
+    @media( max-width:470px){
+      height:200px;
+      &::after{
+        transform:skewY(15deg);
+      }
     }
   `;
   const StyledIntro = styled.p`
@@ -50,9 +56,8 @@ const Intro = () => {
     <StyledDiv>
       <StyledImg src={codepic} />
       <StyledIntro>
-        Hi, I am Lubna - a front end &#123;web&#125; developer based in
-        Kitchener. I build responsive and functional web applications using
-        React. Check out my projects in the portfolio section.
+        Hi, I am Lubna. I am a front end &#123;web&#125; developer based in
+        Kitchener. Check out my projects in the portfolio section.
       </StyledIntro>
     </StyledDiv>
   );

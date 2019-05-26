@@ -14,7 +14,7 @@ const ProjectCard = ({ projectData, openedProject }) => {
     position: absolute;
     top: 20%;
     left: 0%;
-    background-color: #ffc6b7;
+    background-color: #d3b371;
     color: black;
     border: solid 1px black;
     box-sizing: border-box;

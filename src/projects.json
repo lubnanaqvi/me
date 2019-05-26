@@ -11,7 +11,7 @@
     "title": "this..",
     "desc": "I made this portfolio in React with Styled components. This project uses SVG paths to create the animated effect in the background. It was fun migrating it from plain HTML/CSS to React / Styled Components. It is easy to add / remove and change positions of projects in the grid because of the inherent efficiency of React. This project uses SVGIcons and AnimatedSquares components that I later published on npm as plugins.",
     "tech": ["React", "Styled Components", "CSS Grid"],
-    "bgcolor": "#7D5D99"
+    "bgcolor": "#A32857"
   },
   {
     "id": "1",
@@ -44,7 +44,7 @@
     ],
     "desc": "This was my final group project at Bridge-school. This website allows conference organizers and speakers to retrieve a list of all conferences from firebase, and add more using a form. The project consisted of creating API endpoints for POST and GET in a separate backend repo, while using react-redux in the frontend. It was auto deployed from Git.",
     "link": "http://speak-easy-frontend.bridgeschoolapp.io/",
-    "bgcolor": "#A32857"
+    "bgcolor": "#195190"
   },
   {
     "id": "4",

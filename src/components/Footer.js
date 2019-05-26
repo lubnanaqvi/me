@@ -9,20 +9,34 @@ const Footer = () => {
     font-style: normal;
     &:hover {
       background-color: white;
-      color: white;
+      color: black;
     }
   `;
   const StyledDiv = styled.div`
-    background-color: black;
+    background-image: linear-gradient(
+      to right,
+      #18181e,
+      #1d2228,
+      #373a36,
+      #151617,
+      #090a0a
+    );
     color: white;
-    font-size:1.5em;
+    font-size: 1.3em;
     position: relative;
     top: 50px;
     text-align: center;
     padding: 100px 0;
     &::before {
       content: '';
-      background-color:black
+      background-image: linear-gradient(
+        to right,
+        #18181e,
+        #1d2228,
+        #373a36,
+        #151617,
+        #090a0a
+      );
       position: absolute;
       top: 0;
       left: 0;

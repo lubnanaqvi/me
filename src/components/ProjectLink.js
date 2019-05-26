@@ -7,7 +7,7 @@ const ProjectLink = props => {
     grid-column: ${grid.gridCol} / span ${grid.spanCol};
     grid-row: ${grid.gridRow} / span ${grid.spanRow};
     cursor: pointer;
-    border: solid 2px black;
+    border: solid 1px black;
    background-color:${props.projectData.bgcolor}
     text-align: center;
     @media (max-width: 920px) {
@@ -20,7 +20,7 @@ const ProjectLink = props => {
   `;
   const StyledTitle = styled.span`
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     @media (max-width: 920px) {
       font-size: 1.5em;

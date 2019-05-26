@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 const TechSpan = ({ name }) => {
   const StyledSpan = styled.span`
-    background-color: #174a45;
+    background-color: #ff6f61;
     color: white;
     padding: 1%;
     border: solid 2px black;

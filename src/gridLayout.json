@@ -1,8 +1,8 @@
 [
   {
-    "gridCol": "7",
+    "gridCol": "8",
     "spanCol": "2",
-    "gridRow": "6",
+    "gridRow": "7",
     "spanRow": "3"
   },
   {
@@ -30,9 +30,9 @@
     "spanRow": "3"
   },
   {
-    "gridCol": "8",
+    "gridCol": "7",
     "spanCol": "2",
-    "gridRow": "3",
+    "gridRow": "2",
     "spanRow": "4"
   },
   {

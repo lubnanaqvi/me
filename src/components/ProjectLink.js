@@ -8,23 +8,20 @@ const ProjectLink = props => {
     grid-row: ${grid.gridRow} / span ${grid.spanRow};
     cursor: pointer;
     border: solid 1px black;
-   background-color:${props.projectData.bgcolor}
+    background-color: ${props.projectData.bgcolor};
     text-align: center;
     @media (max-width: 920px) {
       grid-column: ${grid.gridCol >= 5 ? grid.gridCol - 4 : grid.gridCol} / span
         ${grid.spanCol};
-      grid-row: ${
-        grid.gridCol >= 5 ? parseInt(grid.gridRow) + 10 : grid.gridRow
-      } / span ${grid.spanRow};
+      grid-row: ${grid.gridCol >= 5
+          ? parseInt(grid.gridRow) + 11
+          : grid.gridRow} / span ${grid.spanRow};
     }
   `;
   const StyledTitle = styled.span`
     color: white;
     font-size: 1.3em;
     font-weight: bold;
-    @media (max-width: 920px) {
-      font-size: 1.5em;
-    }
   `;
   const SpacerDiv = styled.div`
     height: 45%;

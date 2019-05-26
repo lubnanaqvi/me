@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import codepic from '../coding.jpg';
+import codepic from '../me.jpg';
 const Intro = () => {
   const StyledDiv = styled.div`
     height: 300px
@@ -34,7 +34,7 @@ const Intro = () => {
     margin: auto;
     vertical-align: middle;
     text-align: left;
-    color: rgb(65, 43, 25);
+    color: #280e04;
     font-size: 1.5em;
     @media (max-width: 600px) {
       display: block;
@@ -56,8 +56,8 @@ const Intro = () => {
     <StyledDiv>
       <StyledImg src={codepic} />
       <StyledIntro>
-        Hi, I am Lubna. I am a front end &#123;web&#125; developer based in
-        Kitchener. Check out my projects in the portfolio section.
+        Hello, my name is Lubna. I am a front end &#123;web&#125; developer
+        based in Kitchener. Check out my projects in the portfolio section.
       </StyledIntro>
     </StyledDiv>
   );

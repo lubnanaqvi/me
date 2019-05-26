@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledDiv = styled.div`
   font-size: 4em;
-  color: #ff6f61;
+  color: #280e04;
   display: none;
   @media (max-width: 950px) {
     display: block;

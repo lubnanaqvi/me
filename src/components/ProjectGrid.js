@@ -13,7 +13,6 @@ class ProjectGrid extends React.Component {
     };
   }
   handleClick = e => {
-    console.log(e.target.id);
     this.setState({ openedProject: e.target.id });
   };
   render() {

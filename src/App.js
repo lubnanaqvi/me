@@ -2,7 +2,6 @@ import React from 'react';
 import ProjectGrid from './components/ProjectGrid';
 import './App.css';
 import AnimatedBackGround from './components/AnimatedBackGround';
-import DecoParallax from './components/DecoParallax';
 import pimg from './web.jpg';
 import spimg from './web_small.jpg';
 import Header from './components/Header';

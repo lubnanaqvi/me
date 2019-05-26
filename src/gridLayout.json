@@ -1,8 +1,8 @@
 [
   {
-    "gridCol": "8",
+    "gridCol": "6",
     "spanCol": "2",
-    "gridRow": "7",
+    "gridRow": "5",
     "spanRow": "3"
   },
   {
@@ -12,14 +12,14 @@
     "spanRow": "2"
   },
   {
-    "gridCol": "2",
-    "spanCol": "3",
-    "gridRow": "7",
+    "gridCol": "1",
+    "spanCol": "2",
+    "gridRow": "8",
     "spanRow": "3"
   },
   {
     "gridCol": "3",
-    "spanCol": "3",
+    "spanCol": "2",
     "gridRow": "4",
     "spanRow": "4"
   },
@@ -39,6 +39,6 @@
     "gridCol": "4",
     "spanCol": "2",
     "gridRow": "9",
-    "spanRow": "2"
+    "spanRow": "3"
   }
 ]

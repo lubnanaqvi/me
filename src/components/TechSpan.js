@@ -5,8 +5,7 @@ const TechSpan = ({ name }) => {
     background-color: #ff6f61;
     color: white;
     padding: 1%;
-    border: solid 2px black;
-    border-radius: 5%;
+    border: solid 1px black;
     margin: 1%;
     display: inline-block;
   `;

@@ -13,14 +13,7 @@ const Footer = () => {
     }
   `;
   const StyledDiv = styled.div`
-    background-image: linear-gradient(
-      to right,
-      #18181e,
-      #1d2228,
-      #373a36,
-      #151617,
-      #090a0a
-    );
+    background-image: linear-gradient(to right, #280e04, #563012, #80522b);
     color: white;
     font-size: 1.3em;
     position: relative;
@@ -29,14 +22,7 @@ const Footer = () => {
     padding: 100px 0;
     &::before {
       content: '';
-      background-image: linear-gradient(
-        to right,
-        #18181e,
-        #1d2228,
-        #373a36,
-        #151617,
-        #090a0a
-      );
+      background-image: linear-gradient(to right, #280e04, #563012, #80522b);
       position: absolute;
       top: 0;
       left: 0;

@@ -14,7 +14,7 @@ const ProjectCard = ({ projectData, openedProject }) => {
     position: absolute;
     top: 20%;
     left: 0%;
-    background-color: #ffc99a;
+    background-color: #fcca9f;
     color: black;
     border: solid 1px black;
     box-sizing: border-box;
@@ -23,7 +23,7 @@ const ProjectCard = ({ projectData, openedProject }) => {
     font-size: 1rem;
     z-index: 100 !important;
     @media (max-width: 850px) {
-      width: 85% !important;
+      width: 90% !important;
       margin: 0;
       min-height: 400px;
       height: auto;

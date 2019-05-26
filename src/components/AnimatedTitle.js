@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyledDiv = styled.div`
   font-size: 4em;
   cursor: pointer;
-  color: #280e04;
+  color: #ff6f61;
   width: 800px;
   margin: auto;
   text-align: left;

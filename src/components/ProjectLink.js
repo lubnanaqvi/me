@@ -7,8 +7,8 @@ const ProjectLink = props => {
     grid-column: ${grid.gridCol} / span ${grid.spanCol};
     grid-row: ${grid.gridRow} / span ${grid.spanRow};
     cursor: pointer;
-    border: solid 1px black;
-    background-color: ${props.projectData.bgcolor};
+    border: solid 1px #061b28;
+    background-color: #1c2f3b;
     text-align: center;
     @media (max-width: 920px) {
       grid-column: ${grid.gridCol >= 5 ? grid.gridCol - 4 : grid.gridCol} / span

@@ -12,8 +12,8 @@ const ProjectCard = ({ projectData, openedProject }) => {
     width: 700px;
     height: 400px;
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 0%;
+    left: 0%;
     background-color: white;
     color: black;
     border: solid 1px black;

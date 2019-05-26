@@ -9,8 +9,8 @@ const ProjectHeading = ({ title }) => {
     color: black;
     font-size: 2em;
     text-align: left;
-    @media (max-width: 800px) {
-      top: 210px;
+    @media (max-width: 850px) {
+      top: 50px;
       left: -57%;
     }
   `;

@@ -6,10 +6,11 @@ const ProjectLink = props => {
   const StyledDiv = styled.div`
     grid-column: ${grid.gridCol} / span ${grid.spanCol};
     grid-row: ${grid.gridRow} / span ${grid.spanRow};
+    border: solid 1px #1c2f3b;
     cursor: pointer;
-    border: solid 2px #1c2f3b;
-    background-color: #35586f;
+    color: #ff6f61;
     text-align: center;
+    font-size: ${props.projectData.fontsize};
     @media (max-width: 920px) {
       grid-column: ${grid.gridCol >= 5 ? grid.gridCol - 4 : grid.gridCol} / span
         ${grid.spanCol};
@@ -19,12 +20,11 @@ const ProjectLink = props => {
     }
   `;
   const StyledTitle = styled.span`
-    color: white;
+    position: relative;
+    top: -20%;
+    left: -35%;
     font-size: 1.3em;
     font-weight: bold;
-    @media (max-width: 600px) {
-      font-size: 1em;
-    }
   `;
   const SpacerDiv = styled.div`
     height: 45%;

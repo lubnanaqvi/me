@@ -5,10 +5,10 @@ import ProjectTech from './ProjectTech';
 import styled from 'styled-components';
 import ViewProject from './ViewProject';
 
-const ProjectCard = ({ projectData, isProjectDetailOpen }) => {
-  const { title, desc, tech, link, pic } = projectData;
+const ProjectCard = ({ projectData, openedProject }) => {
+  const { title, desc, tech, link, pic, id } = projectData;
   const StyledProjectCard = styled.div`
-    display: ${isProjectDetailOpen ? 'block' : 'none'};
+    display: ${id === openedProject ? 'block' : 'none'};
     width: 700px;
     height: 400px;
     position: absolute;

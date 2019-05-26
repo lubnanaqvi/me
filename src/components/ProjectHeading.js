@@ -6,7 +6,8 @@ const ProjectHeading = ({ title }) => {
     position: relative;
     top: 0px;
     left: -370px;
-    color: white;
+    color: black;
+    font-size: 2em;
     text-align: left;
     @media (max-width: 800px) {
       top: 210px;

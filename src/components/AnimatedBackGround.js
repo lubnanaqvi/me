@@ -36,4 +36,3 @@ const AnimatedBackGround = () => {
   );
 };
 export default AnimatedBackGround;
-/*<StyledDiv expand>{bgSquares}</StyledDiv>*/

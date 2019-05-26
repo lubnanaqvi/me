@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import codepic from '../me.jpg';
+import codepic from '../code2.jpg';
 const Intro = () => {
   const StyledDiv = styled.div`
     height: 300px
     background-color: white;
     position:relative;
-    top:120px;
+    top:130px;
     text-align:center;
     padding-bottom:100px;
     &::after {

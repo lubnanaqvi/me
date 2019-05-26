@@ -14,15 +14,15 @@ const Footer = () => {
   `;
   const StyledDiv = styled.div`
     background-color: black;
-    background-image: linear-gradient(to right, #280e04, #563012, #80522b);
     color: white;
+    font-size:1.5em;
     position: relative;
     top: 50px;
     text-align: center;
     padding: 100px 0;
     &::before {
       content: '';
-      background-image: linear-gradient(to right, #280e04, #563012, #80522b);
+      background-color:black
       position: absolute;
       top: 0;
       left: 0;

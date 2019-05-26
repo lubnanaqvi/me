@@ -3,27 +3,31 @@
     "id": "6",
     "title": "Me",
     "desc": "Hi, I am a front-end developer based in Kitchener. As a developer, I aspire to build apps that have value as well as an intuitive, responsive design. With my background in Computer Engineering, I am drawn to various areas of web development from modern JavaScript and functional programming to the latest UI/UX trends. After completing my web development and design certificate in 2017, I have worked on various group projects and highly value effective and organized collaborative work.",
-    "pic": "1"
+    "pic": "1",
+    "bgcolor": "#263056"
   },
   {
     "id": "7",
     "title": "this..",
     "desc": "I made this portfolio in React with Styled components. This project uses SVG paths to create the animated effect in the background. It was fun migrating it from plain HTML/CSS to React / Styled Components. It is easy to add / remove and change positions of projects in the grid because of the inherent efficiency of React. This project uses SVGIcons and AnimatedSquares components that I later published on npm as plugins.",
-    "tech": ["React", "Styled Components", "CSS Grid"]
+    "tech": ["React", "Styled Components", "CSS Grid"],
+    "bgcolor": "#7D5D99"
   },
   {
     "id": "1",
     "title": "Recipe Reader",
     "tech": ["JavaScript Web Speech", "ResponsiveVoiceJS", "jQuery"],
     "desc": "This is a POC that uses ResponsiveVoiceJS and JavaScript Web Speech API to read recipes in steps following voice commands like 'next','back' and 'repeat'.",
-    "link": "https://derbend.000webhostapp.com/hfr.html"
+    "link": "https://derbend.000webhostapp.com/hfr.html",
+    "bgcolor": "#009499"
   },
   {
     "id": "3",
     "title": "git Query",
     "tech": ["React", "Redux", "Tachyons", "GitHub API"],
     "desc": "This was my personal project at Bridge-school. It allows the user to enter their git handle and then uses the events and repos endpoints of GitHub API to retrieve their recent data and display all their recent Forked events and PRs. I deployed it on firebase.",
-    "link": "https://gitquery11.firebaseapp.com/"
+    "link": "https://gitquery11.firebaseapp.com/",
+    "bgcolor": "#D5D717"
   },
   {
     "id": "2",
@@ -39,19 +43,22 @@
       "Git"
     ],
     "desc": "This was my final group project at Bridge-school. This website allows conference organizers and speakers to retrieve a list of all conferences from firebase, and add more using a form. The project consisted of creating API endpoints for POST and GET in a separate backend repo, while using react-redux in the frontend. It was auto deployed from Git.",
-    "link": "http://speak-easy-frontend.bridgeschoolapp.io/"
+    "link": "http://speak-easy-frontend.bridgeschoolapp.io/",
+    "bgcolor": "#A32857"
   },
   {
     "id": "4",
     "title": "SSUET Alumni",
     "tech": ["JavaScript", "jQuery", "HTML/CSS"],
     "desc": "Launched in Septemeber 2017. I designed, conceptualized and developed this website from scratch for the Canada branch of my University's Alumni.",
-    "link": "http://ssuetalumni.ca/Engineers/"
+    "link": "http://ssuetalumni.ca/Engineers/",
+    "bgcolor": "#81894E"
   },
   {
     "id": "5",
     "title": "SlackD",
     "tech": ["Slack OAuth", "ReactJS", "Redux", "Tachyons"],
-    "desc": "This POC uses Slack OAuth API to log in the user and create a digest of all the links posted in their chat history in Slack. They can then search or filter those results."
+    "desc": "This POC uses Slack OAuth API to log in the user and create a digest of all the links posted in their chat history in Slack. They can then search or filter those results.",
+    "bgcolor": "#00656B"
   }
 ]

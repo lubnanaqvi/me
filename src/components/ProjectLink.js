@@ -1,41 +1,45 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectCard from './ProjectCard';
-class ProjectLink extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-    this.state = {
-      isProjectDetailOpen: false
-    };
-  }
-  handleClick = e => {
-    const toggleProjectDetail = !this.state.isProjectDetailOpen;
-    this.setState({ isProjectDetailOpen: toggleProjectDetail });
-  };
-  render() {
-    const grid = this.props.grid;
-    const StyledDiv = styled.div`
-      grid-column: ${grid.gridCol} / span ${grid.spanCol};
-      grid-row: ${grid.gridRow} / span ${grid.spanRow};
-      cursor: pointer;
-      border: solid 1px white;
-    `;
-
-    const StyledTitle = styled.h4`
-      font-family: Helvetica, sans-serif;
-      text-align: center;
-    `;
-
-    return (
-      <StyledDiv onClick={this.handleClick}>
-        <StyledTitle>{this.props.projectData.title}</StyledTitle>
-        <ProjectCard
-          projectData={this.props.projectData}
-          isProjectDetailOpen={this.state.isProjectDetailOpen}
-        />
-      </StyledDiv>
-    );
-  }
-}
+const ProjectLink = props => {
+  const grid = props.grid;
+  const StyledDiv = styled.div`
+    grid-column: ${grid.gridCol} / span ${grid.spanCol};
+    grid-row: ${grid.gridRow} / span ${grid.spanRow};
+    cursor: pointer;
+    border: solid 2px black;
+   background-color:${props.projectData.bgcolor}
+    text-align: center;
+    @media (max-width: 920px) {
+      grid-column: ${grid.gridCol >= 5 ? grid.gridCol - 4 : grid.gridCol} / span
+        ${grid.spanCol};
+      grid-row: ${
+        grid.gridCol >= 5 ? parseInt(grid.gridRow) + 10 : grid.gridRow
+      } / span ${grid.spanRow};
+    }
+  `;
+  const StyledTitle = styled.span`
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    @media (max-width: 920px) {
+      font-size: 1.5em;
+    }
+  `;
+  const SpacerDiv = styled.div`
+    height: 45%;
+  `;
+  return (
+    <StyledDiv onClick={props.handleProjectClick} id={props.projectData.id}>
+      <SpacerDiv />
+      <StyledTitle onClick={props.handleProjectClick} id={props.projectData.id}>
+        {props.projectData.title}
+      </StyledTitle>
+      <ProjectCard
+        projectData={props.projectData}
+        openedProject={props.openedProject}
+      />
+    </StyledDiv>
+  );
+};
 export default ProjectLink;

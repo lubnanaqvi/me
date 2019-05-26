@@ -7,8 +7,8 @@ const ProjectLink = props => {
     grid-column: ${grid.gridCol} / span ${grid.spanCol};
     grid-row: ${grid.gridRow} / span ${grid.spanRow};
     cursor: pointer;
-    border: solid 1px #061b28;
-    background-color: #1c2f3b;
+    border: solid 2px #1c2f3b;
+    background-color: #35586f;
     text-align: center;
     @media (max-width: 920px) {
       grid-column: ${grid.gridCol >= 5 ? grid.gridCol - 4 : grid.gridCol} / span
@@ -22,6 +22,9 @@ const ProjectLink = props => {
     color: white;
     font-size: 1.3em;
     font-weight: bold;
+    @media (max-width: 600px) {
+      font-size: 1em;
+    }
   `;
   const SpacerDiv = styled.div`
     height: 45%;

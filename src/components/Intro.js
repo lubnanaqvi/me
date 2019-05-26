@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import codepic from '../code2.jpg';
+import codepic from '../coding.jpg';
 const Intro = () => {
   const StyledDiv = styled.div`
     height: 300px

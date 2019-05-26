@@ -11,7 +11,7 @@ const ProjectLink = props => {
     text-align: center;
     font-size: ${props.projectData.fontsize};
     &:hover {
-      border: solid 1px navy;
+      border: solid 1px #1c2f3b;
     }
     @media (max-width: 920px) {
       grid-column: ${grid.gridCol >= 5 ? grid.gridCol - 4 : grid.gridCol} / span

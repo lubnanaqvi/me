@@ -3,17 +3,16 @@ import styled from 'styled-components';
 import codepic from '../coding.jpg';
 const ViewProject = ({ link, pic }) => {
   const StyledLink = styled.a`
-    border: solid 1px black;
+    border: solid 1px #280e04;
     padding: 1%;
-    color: black;
+    color: #280e04;
     text-decoration: none;
     display: block;
     width: 200px;
-    margin: auto;
+    margin: 5% auto;
     text-align: center;
     &:hover {
-      background-color: black;
-      color: white;
+      background-color: white;
     }
   `;
   if (link) return <StyledLink href={link}>View Project</StyledLink>;

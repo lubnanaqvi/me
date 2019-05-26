@@ -4,7 +4,7 @@
     "title": "Me",
     "desc": "Hi, I am a front-end developer based in Kitchener. As a developer, I aspire to build apps that have value as well as an intuitive, responsive design. With my background in Computer Engineering, I am drawn to various areas of web development from modern JavaScript and functional programming to the latest UI/UX trends. After completing my web development and design certificate in 2017, I have worked on various group projects and highly value effective and organized collaborative work.",
     "pic": "1",
-    "fontsize": "1.5em"
+    "fontsize": "1.8em"
   },
   {
     "id": "7",
@@ -19,7 +19,7 @@
     "tech": ["JavaScript Web Speech", "ResponsiveVoiceJS", "jQuery"],
     "desc": "This is a POC that uses ResponsiveVoiceJS and JavaScript Web Speech API to read recipes in steps following voice commands like 'next','back' and 'repeat'.",
     "link": "https://derbend.000webhostapp.com/hfr.html",
-    "fontsize": "1.8em"
+    "fontsize": "1.4em"
   },
   {
     "id": "3",
@@ -52,7 +52,7 @@
     "tech": ["JavaScript", "jQuery", "HTML/CSS"],
     "desc": "Launched in Septemeber 2017. I designed, conceptualized and developed this website from scratch for the Canada branch of my University's Alumni.",
     "link": "http://ssuetalumni.ca/Engineers/",
-    "fontsize": "1.4em"
+    "fontsize": "1.3em"
   },
   {
     "id": "5",

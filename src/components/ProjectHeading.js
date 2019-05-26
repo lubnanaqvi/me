@@ -10,8 +10,10 @@ const ProjectHeading = ({ title }) => {
     font-size: 2em;
     text-align: left;
     @media (max-width: 850px) {
-      top: 50px;
-      left: -57%;
+      background-color: black;
+      color: white;
+      top: 230px;
+      left: -55%;
     }
   `;
   return <StyledHeading>{title}</StyledHeading>;

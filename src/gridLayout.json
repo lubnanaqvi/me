@@ -9,7 +9,7 @@
     "gridCol": "5",
     "spanCol": "3",
     "gridRow": "1",
-    "spanRow": "2"
+    "spanRow": "3"
   },
   {
     "gridCol": "1",
@@ -31,7 +31,7 @@
   },
   {
     "gridCol": "7",
-    "spanCol": "2",
+    "spanCol": "3",
     "gridRow": "2",
     "spanRow": "4"
   },

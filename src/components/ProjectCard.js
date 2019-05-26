@@ -19,7 +19,9 @@ const ProjectCard = ({ projectData, openedProject }) => {
     border: solid 1px black;
     box-sizing: border-box;
     padding: 2%;
+    padding-bottom: 50px;
     font-size: 1rem;
+    z-index: 100 !important;
     @media (max-width: 850px) {
       width: 85% !important;
       margin: 0;

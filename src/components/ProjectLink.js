@@ -6,11 +6,13 @@ const ProjectLink = props => {
   const StyledDiv = styled.div`
     grid-column: ${grid.gridCol} / span ${grid.spanCol};
     grid-row: ${grid.gridRow} / span ${grid.spanRow};
-    border: solid 1px #1c2f3b;
     cursor: pointer;
     color: #ff6f61;
     text-align: center;
     font-size: ${props.projectData.fontsize};
+    &:hover {
+      border: solid 1px navy;
+    }
     @media (max-width: 920px) {
       grid-column: ${grid.gridCol >= 5 ? grid.gridCol - 4 : grid.gridCol} / span
         ${grid.spanCol};

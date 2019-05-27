@@ -4,7 +4,7 @@
     "title": "Me",
     "desc": "Hi, I am a front-end developer based in Kitchener. As a developer, I aspire to build apps that have value as well as an intuitive, responsive design. With my background in Computer Engineering, I am drawn to various areas of web development from modern JavaScript and functional programming to the latest UI/UX trends. After completing my web development and design certificate in 2017, I have worked on various group projects and highly value effective and organized collaborative work.",
     "pic": "1",
-    "fontsize": "1.8rem"
+    "fontsize": "1.5rem"
   },
   {
     "id": "7",
@@ -19,7 +19,7 @@
     "tech": ["JavaScript Web Speech", "ResponsiveVoiceJS", "jQuery"],
     "desc": "This is a POC that uses ResponsiveVoiceJS and JavaScript Web Speech API to read recipes in steps following voice commands like 'next','back' and 'repeat'.",
     "link": "https://derbend.000webhostapp.com/hfr.html",
-    "fontsize": "1.3rem"
+    "fontsize": "1.4rem"
   },
   {
     "id": "3",
@@ -44,7 +44,7 @@
     ],
     "desc": "This was my final group project at Bridge-school. This website allows conference organizers and speakers to retrieve a list of all conferences from firebase, and add more using a form. The project consisted of creating API endpoints for POST and GET in a separate backend repo, while using react-redux in the frontend. It was auto deployed from Git.",
     "link": "http://speak-easy-frontend.bridgeschoolapp.io/",
-    "fontsize": "1.2rem"
+    "fontsize": "1.6rem"
   },
   {
     "id": "4",
@@ -59,6 +59,6 @@
     "title": "SlackD",
     "tech": ["Slack OAuth", "ReactJS", "Redux", "Tachyons"],
     "desc": "This POC uses Slack OAuth API to log in the user and create a digest of all the links posted in their chat history in Slack. They can then search or filter those results.",
-    "fontsize": "1.7rem"
+    "fontsize": "1.4rem"
   }
 ]

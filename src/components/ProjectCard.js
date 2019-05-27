@@ -27,6 +27,7 @@ const ProjectCard = ({ projectData, openedProject }) => {
       margin: 0;
       min-height: 400px;
       height: auto;
+      top: ${10 + parseInt(id) + '%'};
     }
   `;
   return (

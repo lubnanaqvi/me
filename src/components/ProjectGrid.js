@@ -40,11 +40,9 @@ class ProjectGrid extends React.Component {
       padding: 2%;
       color: white;
       @media (max-width: 920px) {
-        width: 75%;
+        width: 80%;
         margin: auto;
-        height: 1000px;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(20, 1fr);
+        font-size: 1em;
       }
     `;
     const StyledDiv = styled.div`

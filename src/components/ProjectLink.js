@@ -14,11 +14,9 @@ const ProjectLink = props => {
       background-color: #1c2f3b;
     }
     @media (max-width: 920px) {
-      grid-column: ${grid.gridCol >= 5 ? grid.gridCol - 4 : grid.gridCol} / span
-        ${grid.spanCol};
-      grid-row: ${grid.gridCol >= 5
-          ? parseInt(grid.gridRow) + 11
-          : grid.gridRow} / span ${grid.spanRow};
+      grid-row: ${grid.gridRow} / span ${grid.spanRow - 1};
+      grid-column: ${grid.gridCol} / span ${parseInt(grid.spanCol) + 1};
+      font-size: ${parseInt(props.projectData.fontsize) + 'em'};
     }
   `;
   const StyledTitle = styled.span`

@@ -10,7 +10,7 @@ const ProjectHeading = ({ title }) => {
     font-size: 2em;
     text-align: left;
     padding-left: 2%;
-    background-color: #1c2f3b;
+    background-color: #ff6f61;
     border: solid 1px black;
     color: white;
     width: 300px;

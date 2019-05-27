@@ -13,7 +13,7 @@ const Footer = () => {
     }
   `;
   const StyledDiv = styled.div`
-    background-image: linear-gradient(to right, #280e04, #563012, #80522b);
+    background-image: linear-gradient(to right, #14212a, #1c2f3b, #2c4b5e);
     color: white;
     font-size: 1.3em;
     position: relative;
@@ -22,7 +22,7 @@ const Footer = () => {
     padding: 100px 0;
     &::before {
       content: '';
-      background-image: linear-gradient(to right, #280e04, #563012, #80522b);
+      background-image: linear-gradient(to right, #14212a, #1c2f3b, #2c4b5e);
       position: absolute;
       top: 0;
       left: 0;
@@ -56,3 +56,4 @@ export default Footer;
 /*personal summary with picture*/
 /*Copyright C lubna naqvi * Kitchener based web developer*/
 /*Interested in building something together? Email me*/
+//#280e04, #563012, #80522b

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import codepic from '../c.png';
+import laptop from '../laptop.jpg';
+import laptopSmall from '../laptop_small.jpg';
 const Intro = () => {
   const StyledDiv = styled.div`
     height: 300px
@@ -36,7 +37,7 @@ const Intro = () => {
     vertical-align: middle;
     height: 300px;
     @media (max-width: 600px) {
-      width: 70%;
+      width: 50%;
       height: auto;
       padding: 5% 0;
     }
@@ -49,26 +50,34 @@ const Intro = () => {
     font-size: 1.5em;
     @media (max-width: 600px) {
       display: block;
-      width: 80%;
+      width: 70%;
       font-size: 1.2em;
     }
   `;
-  const StyledImg = styled.img`
+  const StyledImg = styled.div`
+background:url(${laptop});
+background-size:cover;
+background-repeat:no-repeat;
     display: inline-block;
     width: 250px;
+    height:200px;
     position: relative;
-    left: 100px;
+    left: 5%;
+    filter:grayscale(30%);
     vertical-align: middle;
     @media (max-width: 600px) {
-      width:25%
-      height: auto;
-      left:10%;
-      vertical-align:top;
+      background:url(${laptopSmall});
+      background-size:contain;
+      background-repeat:no-repeat;
+      width:35%
+      height: 100px;
+      left:5%;
+      top:-10%;
     }
   `;
   return (
     <StyledDiv>
-      <StyledImg src={codepic} />
+      <StyledImg />
       <ColorBlock>
         <StyledIntro>
           Hello, my name is Lubna. I am a front end &#123;web&#125; developer

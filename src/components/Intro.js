@@ -69,7 +69,6 @@ background-repeat:no-repeat;
       background:url(${laptopSmall});
       background-size:contain;
       background-repeat:no-repeat;
-      filter:grayscale(30%);
       width:35%
       height: 100px;
       left:5%;

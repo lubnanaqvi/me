@@ -15,9 +15,9 @@ const ProjectHeading = ({ title }) => {
     color: white;
     width: 300px;
     @media (max-width: 850px) {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       top: 180px;
-      left: -70%;
+      left: -167px;
     }
   `;
   return <StyledHeading>{title}</StyledHeading>;

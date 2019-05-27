@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
-  font-size: 6em;
+  font-size: 3em;
   color: #35586f;
   display: none;
   @media (max-width: 950px) {

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
-  font-size: 4em;
+  font-size: 3em;
   cursor: pointer;
   color: #35586f;
   width: 800px;

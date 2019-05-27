@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import laptop from '../laptop.jpg';
-import laptopSmall from '../laptop_small.jpg';
+import laptop from '../laptopOG.jpg';
+import laptopSmall from '../laptopOG_small.jpg';
 const Intro = () => {
   const StyledDiv = styled.div`
     height: 300px
@@ -63,7 +63,7 @@ background-repeat:no-repeat;
     height:200px;
     position: relative;
     left: 5%;
-    filter:grayscale(30%);
+    
     vertical-align: middle;
     @media (max-width: 600px) {
       background:url(${laptopSmall});

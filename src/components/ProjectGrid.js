@@ -73,8 +73,8 @@ class ProjectGrid extends React.Component {
 
     return (
       <StyledDiv id="portfolio">
-        <AnimatedTitle title="p o r t f o l i o -" />
-        <RotatedTitle title="p o r t f o l i o -" />
+        <AnimatedTitle title="portfolio-" />
+        <RotatedTitle title="portfolio-" />
         <StyledGrid>{projectsList}</StyledGrid>
       </StyledDiv>
     );

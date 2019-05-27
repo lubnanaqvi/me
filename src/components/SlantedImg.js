@@ -14,7 +14,7 @@ const SlantedImg = ({ bgUrl, smallBgUrl }) => {
     height: 600px;
     width: 100%;
     margin: 100px auto;
-    filter: grayscale(30%);
+
     @media (max-width: 825px) {
       background: url(${smallBgUrl});
       bakground-repeat: no-repeat;

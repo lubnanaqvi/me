@@ -8,6 +8,9 @@ const AnimatedCircle = ({ coords, rotated, radius, delay, anti }) => {
     fill: transparent;
     stroke-dasharray: 0px;
     stroke-dashoffset: 0px;
+    @media (max-width: 600px) {
+      stroke: #9e9e8e;
+    }
   `;
   const StyledSvg = styled.svg`
     display: inline-block;

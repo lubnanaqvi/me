@@ -59,6 +59,12 @@ const Intro = () => {
     left: 4%;
     font-size: 4em;
     display: inline-block;
+    @media (max-width: 600px) {
+      top: 15%;
+      text-align: left;
+      display: block;
+      width: 70%;
+    }
   `;
   return (
     <StyledDiv>

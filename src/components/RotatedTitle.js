@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
-  font-size: 3em;
-  color: #35586f;
+  font-size: 4em;
+  color: #44443d;
   display: none;
   @media (max-width: 950px) {
     display: block;

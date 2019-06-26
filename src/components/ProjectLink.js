@@ -11,7 +11,7 @@ const ProjectLink = props => {
     text-align: center;
     font-size: ${props.projectData.fontsize};
     &:hover {
-      background-color: #1c2f3b;
+      background-color: #f7f7de;
     }
     @media (max-width: 920px) {
       grid-row: ${grid.gridRow} / span ${grid.spanRow - 1};
@@ -21,8 +21,8 @@ const ProjectLink = props => {
   `;
   const StyledTitle = styled.span`
     position: relative;
-    top: -20%;
-    left: -35%;
+    top: ${props.projectData.top};
+    left: ${props.projectData.left};
     font-size: 1.3em;
     font-weight: bold;
   `;

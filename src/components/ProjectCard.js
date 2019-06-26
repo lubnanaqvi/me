@@ -31,7 +31,11 @@ const ProjectCard = ({ projectData, openedProject }) => {
     }
   `;
   return (
-    <StyledProjectCard>
+    <StyledProjectCard
+      onClick={() => {
+        openedProject = -1;
+      }}
+    >
       <ProjectHeading title={title} />
       <ProjectDesc desc={desc} />
       <ProjectTech tech={tech} />

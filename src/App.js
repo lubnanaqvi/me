@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectGrid from './components/ProjectGrid';
 import './App.css';
-import AnimatedBackGround from './components/AnimatedBackGround';
+import Home from './components/Home';
 import pimg from './web.jpg';
 import spimg from './web_small.jpg';
 import Header from './components/Header';
@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <AnimatedBackGround />
+      <Home />
       <Intro />
       <SlantedImg bgUrl={pimg} smallBgUrl={spimg} />
       <ProjectGrid />

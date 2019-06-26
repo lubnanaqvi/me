@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import AnimatedCircle from './AnimatedCircle';
 const Footer = () => {
   const StyledLink = styled.a`
     color: inherit;
@@ -12,17 +13,26 @@ const Footer = () => {
       color: black;
     }
   `;
-  const StyledDiv = styled.div`
-    background-image: linear-gradient(to right, #14212a, #1c2f3b, #2c4b5e);
+  const BackgroundDiv = styled.div`
+    position: absolute;
+    padding-top: 100px;
+    z-index: 5;
     color: white;
     font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+    padding-top: 200px;
+  `;
+  const StyledDiv = styled.div`
+    background-color: #44443d;
+
     position: relative;
     top: 50px;
-    text-align: center;
+
     padding: 100px 0;
     &::before {
       content: '';
-      background-image: linear-gradient(to right, #14212a, #1c2f3b, #2c4b5e);
+      background-color: #44443d;
       position: absolute;
       top: 0;
       left: 0;
@@ -38,16 +48,43 @@ const Footer = () => {
       }
     }
   `;
+  const randomGen = x => {
+    return Math.random() * x;
+  };
+  const a = [];
+  for (var i = 0; i < 22; i++)
+    a[i] = {
+      ax: parseInt(Math.random() * 100),
+      ay: parseInt(Math.random() * 100),
+      bx: 80,
+      by: parseInt(Math.random() * 100)
+    };
+  const animatedLines = a.map((l, i) => {
+    return (
+      <AnimatedCircle
+        key={i}
+        coords={a[i]}
+        rotated={randomGen(360)}
+        radius={randomGen(50) + 100}
+        delay={randomGen(5)}
+        anti={randomGen(2) > 1}
+      />
+    );
+  });
   return (
-    <StyledDiv>
-      Interested in building something together?
-      <br />
-      <br />
-      <StyledLink href="mailto:lubnanaqvi11@gmail.com">Email me</StyledLink>
-      <br />
-      <br />
-      &copy; 2019 Lubna Naqvi - Front end developer &amp; UI/UX enthusiast
-    </StyledDiv>
+    <footer>
+      <BackgroundDiv>
+        {' '}
+        Interested in building something together?
+        <br />
+        <br />
+        <StyledLink href="mailto:lubnanaqvi11@gmail.com">Email me</StyledLink>
+        <br />
+        <br />
+        &copy; 2019 Lubna Naqvi - Front end developer &amp; UI/UX enthusiast
+      </BackgroundDiv>
+      <StyledDiv>{animatedLines}</StyledDiv>
+    </footer>
   );
 };
 export default Footer;

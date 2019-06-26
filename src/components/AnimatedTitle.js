@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
-  font-size: 3em;
+  font-size: 4em;
   cursor: pointer;
-  color: #35586f;
+  color: #44443d;
   width: 800px;
   margin: auto;
   text-align: left;

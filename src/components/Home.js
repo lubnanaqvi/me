@@ -3,7 +3,11 @@ import AnimatedName from './AnimatedName';
 import AnimatedDecor from './AnimatedDecor';
 import path from '../tree.json';
 import styled from 'styled-components';
-const AnimatedBackGround = () => {
+const Home = () => {
+  const SpacerDiv = styled.div`
+    height: 150px;
+    background-color: #ff6f61;
+  `;
   const StyledDiv = styled.div`
     height: 300px
     background-color: #ff6f61;
@@ -29,10 +33,13 @@ const AnimatedBackGround = () => {
   `;
 
   return (
-    <StyledDiv expand>
-      <AnimatedDecor pathData={path} />
-      <AnimatedName />
-    </StyledDiv>
+    <div>
+      <SpacerDiv />
+      <StyledDiv expand>
+        <AnimatedDecor pathData={path} />
+        <AnimatedName />
+      </StyledDiv>
+    </div>
   );
 };
-export default AnimatedBackGround;
+export default Home;

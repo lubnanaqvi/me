@@ -6,7 +6,7 @@ const Footer = () => {
     color: inherit;
     text-decoration: none;
     padding: 0.8%;
-    border: solid 1.2px white;
+    border: solid 1.2px #ff938a;
     font-style: normal;
     &:hover {
       background-color: white;
@@ -17,7 +17,7 @@ const Footer = () => {
     position: absolute;
     padding-top: 100px;
     z-index: 5;
-    color: white;
+    color: #ff938a;
     font-size: 1.3em;
     text-align: center;
     width: 100%;
@@ -52,16 +52,16 @@ const Footer = () => {
     return Math.random() * x;
   };
   const a = [];
-  for (var i = 0; i < 22; i++)
+  for (var i = 0; i < 16; i++)
     a[i] = {
       ax: parseInt(Math.random() * 100),
       ay: parseInt(Math.random() * 100),
-      bx: 80,
-      by: parseInt(Math.random() * 100)
+      bx: 80
     };
   const animatedLines = a.map((l, i) => {
     return (
       <AnimatedCircle
+        index={i}
         key={i}
         coords={a[i]}
         rotated={randomGen(360)}

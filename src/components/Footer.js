@@ -13,7 +13,7 @@ const Footer = () => {
       color: black;
     }
   `;
-  const BackgroundDiv = styled.div`
+  const ForegroundDiv = styled.div`
     position: absolute;
     padding-top: 100px;
     z-index: 5;
@@ -24,16 +24,13 @@ const Footer = () => {
     padding-top: 200px;
     @media (max-width: 600px) {
       font-size: 1em;
-      padding-top: 100px;
     }
   `;
   const StyledDiv = styled.div`
     background-color: #44443d;
-
     position: relative;
     top: 50px;
-
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     &::before {
       content: '';
       background-color: #44443d;
@@ -46,6 +43,7 @@ const Footer = () => {
       transform-origin: 100%;
       z-index: -1;
     }
+
     @media (max-width: 470px) {
       &::before {
         transform: skewY(15deg);
@@ -56,7 +54,7 @@ const Footer = () => {
     return Math.random() * x;
   };
   const a = [];
-  for (var i = 0; i < 16; i++)
+  for (var i = 0; i < 25; i++)
     a[i] = {
       ax: parseInt(Math.random() * 100),
       ay: parseInt(Math.random() * 100),
@@ -69,7 +67,7 @@ const Footer = () => {
         key={i}
         coords={a[i]}
         rotated={randomGen(360)}
-        radius={randomGen(50) + 100}
+        radius={randomGen(50) + 150}
         delay={randomGen(5)}
         anti={randomGen(2) > 1}
       />
@@ -77,7 +75,7 @@ const Footer = () => {
   });
   return (
     <footer>
-      <BackgroundDiv>
+      <ForegroundDiv>
         {' '}
         Interested in building something together?
         <br />
@@ -86,7 +84,7 @@ const Footer = () => {
         <br />
         <br />
         &copy; 2019 Lubna Naqvi - Front end developer &amp; UI/UX enthusiast
-      </BackgroundDiv>
+      </ForegroundDiv>
       <StyledDiv>{animatedLines}</StyledDiv>
     </footer>
   );

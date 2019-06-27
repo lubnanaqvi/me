@@ -18,8 +18,8 @@ const AnimatedCircle = ({ index, coords, rotated, radius, delay, anti }) => {
     width: 8%;
     transform: rotate(${rotated}deg);
     @media (max-width: 800px) {
-      width: 15%;
-      display: ${index > 9 ? 'none' : 'inline-block'};
+      width: 10%;
+      display: ${index > 20 ? 'none' : 'inline-block'};
       margin: 2%;
       padding: 0;
     }
@@ -37,7 +37,7 @@ const AnimatedCircle = ({ index, coords, rotated, radius, delay, anti }) => {
         style={{
           strokeDasharray: 1000,
           strokeDashoffset: 100,
-          animation: `dash ${delay + 2.5}s ease-in-out 0s forwards infinite`
+          animation: `dash ${delay + 2}s ease-in-out 0s forwards infinite`
         }}
         d={`M ${ax},${ay} a ${bx},${bx} 0 1,0 ${!anti ? '-' : ''}${bx +
           radius},0 a ${bx},${bx} 0 1,0 ${anti ? '-' : ''}${bx + radius},0`}
@@ -46,5 +46,3 @@ const AnimatedCircle = ({ index, coords, rotated, radius, delay, anti }) => {
   );
 };
 export default AnimatedCircle;
-//"M 100, 100 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0
-//"M 1300, 350 a 100,100 0 1,0 -200,0 a 100,100 0 1,0 200,0

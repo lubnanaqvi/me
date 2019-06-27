@@ -5,7 +5,7 @@ import path from '../tree.json';
 import styled from 'styled-components';
 const Home = () => {
   const SpacerDiv = styled.div`
-    height: 150px;
+    height: 100px;
     background-color: #ff6f61;
   `;
   const StyledDiv = styled.div`

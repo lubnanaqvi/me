@@ -48,8 +48,8 @@ class ProjectGrid extends React.Component {
     const StyledDiv = styled.div`
       background-color: white;
       position: relative;
-      top: -150px;
-      padding-top: 50px;
+      top: -100px;
+      padding-top: 150px;
       &::before {
         content: '';
         background-color: white;

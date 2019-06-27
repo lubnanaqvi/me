@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 const Intro = () => {
   const StyledDiv = styled.div`
-    height: 300px
+    height: 350px
     background-color:white ;
     position:relative;
     top:200px;
     text-align:center;
-    padding-bottom:100px;
+    padding-bottom:50px;
     &::after {
       content: '';
     background-color:white;
@@ -19,6 +19,9 @@ const Intro = () => {
     transform: skewY(5deg);
     transform-origin: 0%;
     z-index: -1;
+    }
+    @media (max-width:800px){
+      padding-bottom:200px;
     }
     @media( max-width:470px){
       height:200px;
@@ -34,7 +37,7 @@ const Intro = () => {
     margin: auto;
     vertical-align: middle;
     height: 300px;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       width: 70%;
       height: auto;
       padding: 5% 0;
@@ -46,7 +49,7 @@ const Intro = () => {
     text-align: left;
     color: white;
     font-size: 1.5em;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       display: block;
       width: 70%;
       font-size: 1.2em;
@@ -59,7 +62,7 @@ const Intro = () => {
     left: 4%;
     font-size: 4em;
     display: inline-block;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       top: 15%;
       text-align: left;
       display: block;

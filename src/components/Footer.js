@@ -20,17 +20,19 @@ const Footer = () => {
     color: #ff938a;
     font-size: 1.3em;
     text-align: center;
-    width: 100%;
+    width: 98%;
+    margin: 1%;
     padding-top: 200px;
-    @media (max-width: 600px) {
-      font-size: 1em;
+    @media (max-width: 800px) {
+      padding-top:100px
+      font-size: 1.1em;
     }
   `;
   const StyledDiv = styled.div`
     background-color: #44443d;
     position: relative;
     top: 50px;
-    padding: 100px 0 0 0;
+    padding: 50px 0 100px 0;
     &::before {
       content: '';
       background-color: #44443d;
@@ -43,7 +45,6 @@ const Footer = () => {
       transform-origin: 100%;
       z-index: -1;
     }
-
     @media (max-width: 470px) {
       &::before {
         transform: skewY(15deg);
@@ -76,7 +77,6 @@ const Footer = () => {
   return (
     <footer>
       <ForegroundDiv>
-        {' '}
         Interested in building something together?
         <br />
         <br />

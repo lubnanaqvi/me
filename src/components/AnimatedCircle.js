@@ -18,10 +18,8 @@ const AnimatedCircle = ({ index, coords, rotated, radius, delay, anti }) => {
     width: 8%;
     transform: rotate(${rotated}deg);
     @media (max-width: 800px) {
-      width: 10%;
       display: ${index > 20 ? 'none' : 'inline-block'};
-      margin: 2%;
-      padding: 0;
+      margin-bottom: 2%;
     }
   `;
   return (

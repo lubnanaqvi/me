@@ -108,3 +108,15 @@ GREENS
 #74907a,
 #4c7057
  */
+/*
+,
+  {
+    "id": "5",
+    "title": "SlackD",
+    "tech": ["Slack OAuth", "ReactJS", "Redux", "Tachyons"],
+    "desc": "This POC uses Slack OAuth API to log in the user and create a digest of all the links posted in their chat history in Slack. They can then search or filter those results.",
+    "fontsize": "1.4rem",
+    "top": "20%",
+    "left": "35%"
+  }
+*/

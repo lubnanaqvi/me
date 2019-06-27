@@ -11,8 +11,8 @@
   {
     "id": "7",
     "title": "this..",
-    "desc": "I made this portfolio in React with Styled components. This project uses SVG paths to create the animated effect in the background. It was fun migrating it from plain HTML/CSS to React / Styled Components. It is easy to add / remove and change positions of projects in the grid because of the inherent efficiency of React. This project uses SVGIcons and AnimatedSquares components that I later published on npm as plugins.",
-    "tech": ["React", "Styled Components", "CSS Grid"],
+    "desc": "I made this portfolio in React with Styled components. This project uses SVG paths to create the animated effect in the background. It was fun migrating it from plain HTML/CSS to React / Styled Components. It is easy to add / remove and change positions of projects in the grid because of the inherent efficiency of React.",
+    "tech": ["React", "Styled Components", "CSS Grid", "SVG"],
     "fontsize": "1.5rem",
     "top": "20%",
     "left": "45%"
@@ -68,10 +68,11 @@
   },
   {
     "id": "5",
-    "title": "SlackD",
-    "tech": ["Slack OAuth", "ReactJS", "Redux", "Tachyons"],
-    "desc": "This POC uses Slack OAuth API to log in the user and create a digest of all the links posted in their chat history in Slack. They can then search or filter those results.",
+    "title": "getRSVP",
+    "tech": ["JavaScript", "HTML/CSS", "PHP"],
+    "desc": "This is a simple demo of a web based invite that collects RSVPs from the users, checking if they are in the guest-list and saving their response.",
     "fontsize": "1.4rem",
+    "link": "http://torevite.000webhostapp.com",
     "top": "20%",
     "left": "35%"
   }

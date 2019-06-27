@@ -22,6 +22,10 @@ const Footer = () => {
     text-align: center;
     width: 100%;
     padding-top: 200px;
+    @media (max-width: 600px) {
+      font-size: 1em;
+      padding-top: 100px;
+    }
   `;
   const StyledDiv = styled.div`
     background-color: #44443d;

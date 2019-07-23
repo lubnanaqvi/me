@@ -72,7 +72,7 @@
     "tech": ["JavaScript", "HTML/CSS", "PHP"],
     "desc": "This is a simple demo of a web based invite that collects RSVPs from the users, checking if they are in the guest-list and saving their response.",
     "fontsize": "1.4rem",
-    "link": "http://torevite.000webhostapp.com",
+    "link": "https://github.com/lubnanaqvi/RSVPhp",
     "top": "20%",
     "left": "35%"
   }

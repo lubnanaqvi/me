@@ -22,7 +22,7 @@
     "title": "Recipe Reader",
     "tech": ["JavaScript Web Speech", "ResponsiveVoiceJS", "jQuery"],
     "desc": "This is a POC that uses ResponsiveVoiceJS and JavaScript Web Speech API to read recipes in steps following voice commands like 'next','back' and 'repeat'.",
-    "link": "https://derbend.000webhostapp.com/hfr.html",
+    "link": "https://recipereader-fcdc7.firebaseapp.com/",
     "fontsize": "1.4rem",
     "top": "20%",
     "left": "35%"

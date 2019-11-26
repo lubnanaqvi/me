@@ -15,7 +15,6 @@ const Footer = () => {
   `;
   const ForegroundDiv = styled.div`
     position: absolute;
-    padding-top: 100px;
     z-index: 5;
     color: #ff938a;
     font-size: 1.3em;
@@ -24,19 +23,22 @@ const Footer = () => {
     margin: 1%;
     padding-top: 200px;
     @media (max-width: 800px) {
-      padding-top:100px
+      padding-top:150px
       font-size: 1.1em;
     }
   `;
   const StyledDiv = styled.div`
     background-color: #44443d;
     position: relative;
-    top: 50px;
-    padding: 50px 0 100px 0;
+    top: 150px;
+    padding: 150px 0 100px 0;
   `;
   const randomGen = x => {
     return Math.random() * x;
   };
+  const SpacerDiv = styled.div`
+    height: 100px;
+  `;
   const a = [];
   for (var i = 0; i < 25; i++)
     a[i] = {
@@ -44,7 +46,7 @@ const Footer = () => {
       ay: parseInt(Math.random() * 100),
       bx: 80
     };
-  const animatedLines = a.map((l, i) => {
+  const animatedCircles = a.map((l, i) => {
     return (
       <AnimatedCircle
         index={i}
@@ -60,6 +62,7 @@ const Footer = () => {
   return (
     <footer>
       <ForegroundDiv>
+        <SpacerDiv />
         Interested in building something together?
         <br />
         <br />
@@ -68,7 +71,7 @@ const Footer = () => {
         <br />
         &copy; 2019 Lubna Naqvi - Front end developer
       </ForegroundDiv>
-      <StyledDiv>{animatedLines}</StyledDiv>
+      <StyledDiv>{animatedCircles}</StyledDiv>
     </footer>
   );
 };

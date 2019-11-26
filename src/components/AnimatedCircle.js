@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 const AnimatedCircle = ({ index, coords, rotated, radius, delay, anti }) => {
   const { ax, ay, bx } = coords;
   const StyledPath = styled.path`
@@ -18,7 +18,7 @@ const AnimatedCircle = ({ index, coords, rotated, radius, delay, anti }) => {
     width: 8%;
     transform: rotate(${rotated}deg);
     @media (max-width: 800px) {
-      display: ${index > 20 ? 'none' : 'inline-block'};
+      display: ${index > 20 ? "none" : "inline-block"};
       margin-bottom: 2%;
     }
   `;
@@ -37,8 +37,8 @@ const AnimatedCircle = ({ index, coords, rotated, radius, delay, anti }) => {
           strokeDashoffset: 100,
           animation: `dash ${delay + 2}s ease-in-out 0s forwards infinite`
         }}
-        d={`M ${ax},${ay} a ${bx},${bx} 0 1,0 ${!anti ? '-' : ''}${bx +
-          radius},0 a ${bx},${bx} 0 1,0 ${anti ? '-' : ''}${bx + radius},0`}
+        d={`M ${ax},${ay} a ${bx},${bx} 0 1,0 ${!anti ? "-" : ""}${bx +
+          radius},0 a ${bx},${bx} 0 1,0 ${anti ? "-" : ""}${bx + radius},0`}
       />
     </StyledSvg>
   );

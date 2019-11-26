@@ -19,8 +19,3 @@ const App = () => {
 };
 
 export default App;
-/*
--add cv  
--remove unnecessary stuff i.e. code cleanup
--add side nav bar
-*/

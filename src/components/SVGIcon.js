@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import Pdf from "../CV2019.pdf";
 const SVGIcon = ({ link, iconName, paths }) => {
   const svgPath = paths.map((p, i) => {
     return <path d={p} key={i} />;
@@ -20,7 +21,7 @@ const SVGIcon = ({ link, iconName, paths }) => {
     color: inherit;
   `;
   return (
-    <StyledLink href={link}>
+    <StyledLink href={link ? link : Pdf} target={link ? "_self" : "_blank"}>
       <StyledIcon className={`icon icon-${iconName}`}>
         <use xlinkHref={`#icon-${iconName}`} />
         <defs>

@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import '../keyframes.css';
+import React from "react";
+import styled from "styled-components";
+import "../keyframes.css";
 
 const AnimatedName = () => {
   const StyledDiv = styled.div`
@@ -19,10 +19,10 @@ const AnimatedName = () => {
   `;
   const letterPathStyles = (delay, name) => {
     return {
-      strokeDasharray: '600px',
-      strokeDashoffset: '-600px',
+      strokeDasharray: "600px",
+      strokeDashoffset: "-600px",
       animation: ` ${name} ${delay + 0.5}s linear ${delay}s forwards`,
-      cursor: 'pointer'
+      cursor: "pointer"
     };
   };
   const ww = window.innerWidth;
@@ -37,19 +37,19 @@ const AnimatedName = () => {
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        viewBox={'280 50 ' + viewBoxWidth + ' ' + viewBoxHeight}
+        viewBox={"280 50 " + viewBoxWidth + " " + viewBoxHeight}
       >
         <g>
           <StyledPath
             id="lpath"
-            style={letterPathStyles(0, 'L-anim')}
+            style={letterPathStyles(0, "L-anim")}
             d="M300.8,345.4l11.3-2.4c1.2-0.3,2.2-0.9,3-1.9c0.8-0.9,1.2-2.1,1.2-3.4v-98.8c0-1.4-0.4-2.5-1.2-3.5
         c-0.8-0.9-1.8-1.6-3-1.9l-11.3-2.3V227h47.6v4.2l-11.8,2.3c-1.2,0.2-2.2,0.9-3,1.9c-0.8,1-1.2,2.2-1.2,3.5v103.9h45
         c0.6,0,1.1-0.2,1.6-0.5c0.4-0.3,0.8-0.7,1.1-1.2c0.3-0.5,0.5-1,0.7-1.6s0.3-1,0.4-1.4l6.8-23.5h4.7v34.9h-91.7V345.4z"
           />
           <StyledPath
             id="upath"
-            style={letterPathStyles(1, 'U-anim')}
+            style={letterPathStyles(1, "U-anim")}
             d="M407.8,279.7c0-1.5-0.4-2.8-1.2-3.9c-0.8-1.1-2.3-2-4.3-2.7l-8.2-2.9v-2.4l28.6-6.1v53.5c0,4,0.2,7.6,0.6,10.8
         c0.4,3.2,1.3,5.9,2.6,8.2c1.3,2.3,3.2,4,5.7,5.2c2.5,1.2,5.8,1.8,9.9,1.8c1.8,0,3.6-0.2,5.6-0.5c1.9-0.3,3.8-0.8,5.7-1.6
         c1.9-0.7,3.6-1.6,5.3-2.8c1.7-1.2,3.2-2.6,4.5-4.3v-52.4c0-1.5-0.4-2.7-1.2-3.6c-0.8-0.8-2.2-1.6-4.2-2.3l-8.4-2.9v-2.4l28.7-6.8
@@ -59,7 +59,7 @@ const AnimatedName = () => {
           />
           <StyledPath
             id="bpath"
-            style={letterPathStyles(2, 'B-anim')}
+            style={letterPathStyles(2, "B-anim")}
             d="M506.5,234c0-1.5-0.4-2.8-1.2-3.9c-0.8-1.1-2.3-2-4.3-2.7l-8.2-2.9v-2.4l28.6-6.8v56.2v4.4
         c2.4-3.4,4.9-6.2,7.5-8.2c2.6-2,5.1-3.5,7.6-4.5c2.5-1,4.8-1.6,6.9-1.9c2.2-0.3,4-0.4,5.5-0.4c5.3,0,10.1,1,14.3,3.1
         c4.2,2.1,7.7,5,10.6,8.7c2.9,3.7,5.1,8.2,6.7,13.4c1.5,5.2,2.3,10.9,2.3,17c0,6.8-0.9,13.2-2.8,19.1c-1.9,5.9-4.7,11.1-8.3,15.5
@@ -71,7 +71,7 @@ const AnimatedName = () => {
           />
           <StyledPath
             id="npath"
-            style={letterPathStyles(3, 'N-anim')}
+            style={letterPathStyles(3, "N-anim")}
             d="M591.3,345.5l9.7-2.2c1.2-0.3,2.1-0.9,2.9-1.8c0.7-0.9,1.1-2,1.1-3.3v-58.6c0-1.5-0.4-2.8-1.2-3.9
         c-0.8-1.1-2.3-2-4.3-2.7l-8.2-2.9v-2.4l28.2-6.1V276c2.3-3.1,4.5-5.7,6.8-7.7c2.3-2,4.6-3.5,6.9-4.6c2.3-1.1,4.7-1.8,7-2.2
         c2.4-0.4,4.8-0.6,7.2-0.6c3.9,0,7.5,0.6,10.8,1.7c3.4,1.2,6.3,3,8.8,5.4c2.5,2.5,4.4,5.6,5.9,9.5c1.4,3.9,2.1,8.5,2.1,13.9v46.4
@@ -82,7 +82,7 @@ const AnimatedName = () => {
           />
           <StyledPath
             id="apath"
-            style={letterPathStyles(4, 'A-anim')}
+            style={letterPathStyles(4, "A-anim")}
             d="M739,344.4c-2.5,1.9-4.9,3.4-7.5,4.4c-2.5,1-5,1.7-7.5,2c-2.5,0.3-4.7,0.5-6.8,0.5c-3.4,0-6.4-0.6-9.2-1.9
         s-5.1-2.9-7.1-5c-2-2.1-3.5-4.5-4.6-7.3c-1.1-2.8-1.6-5.7-1.6-8.8c0-3.6,0.6-6.8,1.9-9.7c1.3-2.8,3-5.3,5.2-7.5
         c2.2-2.2,4.6-4,7.4-5.5c2.8-1.5,5.7-2.7,8.6-3.7c3-0.9,5.9-1.6,8.9-2.1c3-0.4,5.7-0.7,8.3-0.7c0.5,0,1.3,0,2.3,0.1

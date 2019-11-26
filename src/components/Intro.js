@@ -1,33 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 const Intro = () => {
   const StyledDiv = styled.div`
     height: 350px
     background-color:white ;
-    position:relative;
-    top:200px;
     text-align:center;
     padding-bottom:50px;
-    &::after {
-      content: '';
-    background-color:white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: skewY(5deg);
-    transform-origin: 0%;
-    z-index: -1;
-    }
+    padding-top:100px;
     @media (max-width:800px){
       padding-bottom:200px;
     }
     @media( max-width:470px){
       height:200px;
-      &::after{
-        transform:skewY(15deg);
-      }
     }
   `;
   const ColorBlock = styled.div`
@@ -74,8 +58,8 @@ const Intro = () => {
       <Styledheading>Intro-</Styledheading>
       <ColorBlock>
         <StyledIntro>
-          Hello, my name is Lubna. I am a front end &#123;web&#125; developer
-          based in Kitchener. Check out my projects in the portfolio section.
+          Hello, my name is Lubna. I am a front end developer based in
+          Kitchener. Check out my projects in the portfolio section.
         </StyledIntro>
       </ColorBlock>
     </StyledDiv>

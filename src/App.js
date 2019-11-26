@@ -1,13 +1,10 @@
-import React from 'react';
-import ProjectGrid from './components/ProjectGrid';
-import './App.css';
-import Home from './components/Home';
-import pimg from './web.jpg';
-import spimg from './web_small.jpg';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Intro from './components/Intro';
-import SlantedImg from './components/SlantedImg';
+import React from "react";
+import ProjectGrid from "./components/ProjectGrid";
+import "./App.css";
+import Home from "./components/Home";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Intro from "./components/Intro";
 
 const App = () => {
   return (
@@ -15,7 +12,6 @@ const App = () => {
       <Header />
       <Home />
       <Intro />
-      <SlantedImg bgUrl={pimg} smallBgUrl={spimg} />
       <ProjectGrid />
       <Footer />
     </div>

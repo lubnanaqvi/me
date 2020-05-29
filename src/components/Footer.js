@@ -33,7 +33,7 @@ const Footer = () => {
     top: 150px;
     padding: 150px 0 100px 0;
   `;
-  const randomGen = x => {
+  const randomGen = (x) => {
     return Math.random() * x;
   };
   const SpacerDiv = styled.div`
@@ -44,7 +44,7 @@ const Footer = () => {
     a[i] = {
       ax: parseInt(Math.random() * 100),
       ay: parseInt(Math.random() * 100),
-      bx: 80
+      bx: 80,
     };
   const animatedCircles = a.map((l, i) => {
     return (
@@ -69,7 +69,7 @@ const Footer = () => {
         <StyledLink href="mailto:lubnanaqvi11@gmail.com">Email me</StyledLink>
         <br />
         <br />
-        &copy; 2019 Lubna Naqvi - Front end developer
+        &copy; 2020 Lubna Naqvi - Front end developer
       </ForegroundDiv>
       <StyledDiv>{animatedCircles}</StyledDiv>
     </footer>

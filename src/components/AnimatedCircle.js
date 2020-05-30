@@ -35,10 +35,11 @@ const AnimatedCircle = ({ index, coords, rotated, radius, delay, anti }) => {
         style={{
           strokeDasharray: 1000,
           strokeDashoffset: 100,
-          animation: `dash ${delay + 2}s ease-in-out 0s forwards infinite`
+          animation: `dash ${delay + 2}s ease-in-out 0s forwards infinite`,
         }}
-        d={`M ${ax},${ay} a ${bx},${bx} 0 1,0 ${!anti ? "-" : ""}${bx +
-          radius},0 a ${bx},${bx} 0 1,0 ${anti ? "-" : ""}${bx + radius},0`}
+        d={`M ${ax},${ay} a ${bx},${bx} 0 1,0 ${!anti ? "-" : ""}${
+          bx + radius
+        },0 a ${bx},${bx} 0 1,0 ${anti ? "-" : ""}${bx + radius},0`}
       />
     </StyledSvg>
   );

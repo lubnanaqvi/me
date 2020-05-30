@@ -6,16 +6,16 @@ const SVGIcon = ({ link, iconName, paths }) => {
     return <path d={p} key={i} />;
   });
   const StyledIcon = styled.svg`
-    display: block;
-    width: 1.5em;
-    height: 1.5em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
     margin: auto;
     stroke: #174a45;
     fill: transparent;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
-    padding: 15px 1%;
+    padding: 0.3em 0.3em 0 0.3em;
   `;
   const StyledLink = styled.a`
     color: inherit;

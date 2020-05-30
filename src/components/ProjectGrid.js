@@ -1,28 +1,26 @@
-import React from 'react';
-import styled from 'styled-components';
-import projects from '../projects.json';
-import ProjectLink from './ProjectLink';
-import gridLayout from '../gridLayout.json';
-import AnimatedTitle from './AnimatedTitle';
-import RotatedTitle from './RotatedTitle';
+import React from "react";
+import styled from "styled-components";
+import projects from "../projects.json";
+import ProjectLink from "./ProjectLink";
+import gridLayout from "../gridLayout.json";
+import AnimatedTitle from "./AnimatedTitle";
+import RotatedTitle from "./RotatedTitle";
 class ProjectGrid extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      openedProject: '-1'
+      openedProject: "-1",
     };
   }
-  handleClick = e => {
+  handleClick = (e) => {
     this.setState({ openedProject: e.target.id });
   };
   render() {
     const projectsList = projects.map((p, i) => {
-      // if (p.title === 'Me') return <AnimatedName grid={gridLayout[i]} />;
       return (
         <ProjectLink
           projectData={p}
           key={i}
-          grid={gridLayout[i]}
           handleProjectClick={this.handleClick.bind(this)}
           openedProject={this.state.openedProject}
         />
@@ -30,16 +28,19 @@ class ProjectGrid extends React.Component {
     });
 
     const StyledGrid = styled.div`
-      width: 800px;
+      width: 700px;
       height: 500px;
       margin: auto;
       display: grid;
       position: relative;
-      grid-template-columns: repeat(10, 1fr);
-      grid-template-rows: repeat(10, 1fr);
-      padding: 2%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 1em;
       color: white;
-      @media (max-width: 920px) {
+      @media (max-width: 720px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 7em);
+        height: 1200px;
         width: 80%;
         margin: auto;
         font-size: 1em;
@@ -51,7 +52,7 @@ class ProjectGrid extends React.Component {
       top: -100px;
       padding-top: 150px;
       &::before {
-        content: '';
+        content: "";
         background-color: white;
         position: absolute;
         top: 0;
@@ -70,7 +71,7 @@ class ProjectGrid extends React.Component {
     `;
 
     return (
-      <StyledDiv id="portfolio">
+      <StyledDiv id="portfolio" onClick={this.handleClick.bind(this)}>
         <AnimatedTitle title="portfolio-" />
         <RotatedTitle title="portfolio-" />
         <StyledGrid>{projectsList}</StyledGrid>

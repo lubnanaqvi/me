@@ -1,7 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import AnimatedCircle from "./AnimatedCircle";
+import icons from "../iconpaths.json";
+import SVGIcon from "./SVGIcon";
 const Footer = () => {
+  const iconsList = icons.map((icon, i) => {
+    return (
+      <SVGIcon
+        key={i}
+        link={icon.link}
+        iconName={icon.name}
+        paths={icon.paths}
+      />
+    );
+  });
   const StyledLink = styled.a`
     color: inherit;
     text-decoration: none;
@@ -20,18 +32,19 @@ const Footer = () => {
     font-size: 1.3em;
     text-align: center;
     width: 98%;
-    margin: 1%;
-    padding-top: 200px;
-    @media (max-width: 800px) {
-      padding-top:150px
+    margin-left: 1%;
+    @media (max-width: 720px) {
       font-size: 1.1em;
+      margin-top: -2em;
     }
   `;
   const StyledDiv = styled.div`
     background-color: #44443d;
     position: relative;
-    top: 150px;
-    padding: 150px 0 100px 0;
+    padding: 5em 0 3em 0;
+    @media (max-width: 720px) {
+      padding: 5em 0;
+    }
   `;
   const randomGen = (x) => {
     return Math.random() * x;
@@ -69,7 +82,7 @@ const Footer = () => {
         <StyledLink href="mailto:lubnanaqvi11@gmail.com">Email me</StyledLink>
         <br />
         <br />
-        &copy; 2020 Lubna Naqvi - Front end developer
+        &copy; 2020 Lubna Naqvi - {iconsList}
       </ForegroundDiv>
       <StyledDiv>{animatedCircles}</StyledDiv>
     </footer>

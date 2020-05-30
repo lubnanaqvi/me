@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 const ProjectHeading = ({ title }) => {
   const StyledHeading = styled.h2`
     transform: rotate(-90deg);
@@ -7,7 +7,7 @@ const ProjectHeading = ({ title }) => {
     top: 100px;
     left: -180px;
     color: black;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: left;
     padding-left: 2%;
     background-color: #ff6f61;

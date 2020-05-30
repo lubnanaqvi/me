@@ -1,28 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
-import ProjectCard from './ProjectCard';
-const ProjectLink = props => {
-  const grid = props.grid;
+import React from "react";
+import styled from "styled-components";
+import ProjectCard from "./ProjectCard";
+const ProjectLink = (props) => {
   const StyledDiv = styled.div`
-    grid-column: ${grid.gridCol} / span ${grid.spanCol};
-    grid-row: ${grid.gridRow} / span ${grid.spanRow};
     cursor: pointer;
+    background-color: #eaeacc;
     color: #ff6f61;
     text-align: center;
-    font-size: ${props.projectData.fontsize};
     &:hover {
-      background-color: #f6f6f4;
-    }
-    @media (max-width: 920px) {
-      grid-row: ${grid.gridRow} / span ${grid.spanRow - 1};
-      grid-column: ${grid.gridCol} / span ${parseInt(grid.spanCol) + 1};
-      font-size: ${parseInt(props.projectData.fontsize) + 'em'};
+      background-color: #ff6f61;
+      color: white;
     }
   `;
   const StyledTitle = styled.span`
     position: relative;
-    top: ${props.projectData.top};
-    left: ${props.projectData.left};
     font-size: 1.3em;
     font-weight: bold;
   `;

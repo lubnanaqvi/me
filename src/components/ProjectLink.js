@@ -4,10 +4,11 @@ import ProjectCard from "./ProjectCard";
 const ProjectLink = (props) => {
   const StyledDiv = styled.div`
     cursor: pointer;
-    background-color: #eaeacc;
+    background-color: #e3e4db;
     color: #ff6f61;
     text-align: center;
     &:hover {
+      background-image: none;
       background-color: #ff6f61;
       color: white;
     }

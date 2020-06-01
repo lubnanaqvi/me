@@ -2,8 +2,14 @@
   {
     "id": "0",
     "title": "cgraph",
-    "tech": ["React", "react-line-chart", "styled-components"],
-    "desc": "Recently developed this web application to quickly show graphical data related to COVID19. The user can save their favourite countries for easy access next time they visit (localStorage). Also the color scheme can be customized.",
+    "tech": [
+      "React",
+      "react-line-chart",
+      "styled-components",
+      "functional programming",
+      "Hooks"
+    ],
+    "desc": "Recently developed this web application that shows graphical data related to COVID19. UI features include saving favourite countries for easy access next time a user visits (localStorage). Also the color scheme can be customized. I built it using only functaional components with hooks. I am currently improving the state management (useReducer and useContext)",
     "link": "https://cgraph2020.firebaseapp.com",
     "fontsize": "1em",
     "top": "20%",
@@ -12,8 +18,15 @@
   {
     "id": "1",
     "title": "cmw-kw.org",
-    "tech": ["Gatsby", "React", "Contentful", "Netlify", "styled-components"],
-    "desc": "Recently designed and developed this website for a local not-for-profit organization using Gatsby. My clients wanted a modern-looking, super fast website that they could update easily. My solution was to use Gatsby with Contentful and Netlify. This is a JAMStack website that can be updated by my clients using Contentful.com. I am currently in the process of moving it to Netlify.",
+    "tech": [
+      "GatsbyJS",
+      "graphQL",
+      "React",
+      "Contentful",
+      "Netlify",
+      "styled-components"
+    ],
+    "desc": "Recently designed and developed this website for a local not-for-profit organization using Gatsby. My clients wanted a modern-looking, super fast website that they could update easily. My solution was to use Gatsby with Contentful and Netlify - using webhooks to ensure that any changes that my clients make to the content on Contentful trigger an automated build on Netlify. I am currently in the process of moving the site to Netlify.",
     "link": "https://cmw-kw.org",
     "fontsize": "1em",
     "top": "20%",

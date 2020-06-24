@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import icons from "../iconpaths.json";
-import SVGIcon from "./SVGIcon";
+
 const Header = () => {
   // const iconsList = icons.map((icon, i) => {
   //   return (

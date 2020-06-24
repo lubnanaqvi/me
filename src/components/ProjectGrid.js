@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import projects from "../projects.json";
 import ProjectLink from "./ProjectLink";
-import gridLayout from "../gridLayout.json";
 import AnimatedTitle from "./AnimatedTitle";
 import RotatedTitle from "./RotatedTitle";
 class ProjectGrid extends React.Component {

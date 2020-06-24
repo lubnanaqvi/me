@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import AnimatedCircle from "./AnimatedCircle";
+import Bubble from "./Bubble";
 import icons from "../iconpaths.json";
 import SVGIcon from "./SVGIcon";
 const Footer = () => {
@@ -26,56 +26,39 @@ const Footer = () => {
     }
   `;
   const ForegroundDiv = styled.div`
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    z-index: 5;
+    z-index: 15;
     color: #ff938a;
     font-size: 1.3em;
     text-align: center;
-    width: 98%;
-    margin-left: 1%;
+    height: 250px;
+    width: 100%;
+    padding-top: 50px;
     @media (max-width: 720px) {
-      font-size: 1.1em;
-      margin-top: -2em;
+      font-size: 0.8em;
     }
   `;
-  const StyledDiv = styled.div`
+  const StyledFooter = styled.footer`
     background-color: #44443d;
+    height: 300px;
     position: relative;
-    padding: 5em 0 3em 0;
-    @media (max-width: 720px) {
-      padding: 5em 0;
-    }
-  `;
-  const randomGen = (x) => {
-    return Math.random() * x;
-  };
-  const SpacerDiv = styled.div`
-    height: 100px;
   `;
   const a = [];
+  const ww = window.innerWidth;
   for (var i = 0; i < 25; i++)
     a[i] = {
-      ax: parseInt(Math.random() * 100),
-      ay: parseInt(Math.random() * 100),
-      bx: 80,
+      ax: parseInt(Math.random() * ww) - 50,
+      ay: parseInt(Math.random() * 250),
+      bx: parseInt(Math.random() * ww) - 50,
+      by: parseInt(Math.random() * 250),
     };
   const animatedCircles = a.map((l, i) => {
-    return (
-      <AnimatedCircle
-        index={i}
-        key={i}
-        coords={a[i]}
-        rotated={randomGen(360)}
-        radius={randomGen(50) + 150}
-        delay={randomGen(5)}
-        anti={randomGen(2) > 1}
-      />
-    );
+    return <Bubble key={i} fromX={l.ax} fromY={l.ay} toX={l.bx} toY={l.by} />;
   });
   return (
-    <footer>
+    <StyledFooter>
       <ForegroundDiv>
-        <SpacerDiv />
         Interested in building something together?
         <br />
         <br />
@@ -84,8 +67,8 @@ const Footer = () => {
         <br />
         &copy; 2020 Lubna Naqvi - {iconsList}
       </ForegroundDiv>
-      <StyledDiv>{animatedCircles}</StyledDiv>
-    </footer>
+      {animatedCircles}
+    </StyledFooter>
   );
 };
 export default Footer;

@@ -6,7 +6,7 @@
       "React",
       "react-line-chart",
       "styled-components",
-      "functional programming",
+      "functional components",
       "Hooks"
     ],
     "desc": "Recently developed this web application that shows graphical data related to COVID19. UI features include saving favourite countries for easy access next time a user visits (localStorage). Also the color scheme can be customized. I built it using only functaional components with hooks. I am currently improving the state management (useReducer and useContext)",
@@ -24,10 +24,12 @@
       "React",
       "Contentful",
       "Netlify",
-      "styled-components"
+      "styled-components",
+      "functional components",
+      "Hooks"
     ],
     "desc": "Recently designed and developed this website for a local not-for-profit organization using Gatsby. My clients wanted a modern-looking, super fast website that they could update easily. My solution was to use Gatsby with Contentful and Netlify - using webhooks to ensure that any changes that my clients make to the content on Contentful trigger an automated build on Netlify. I am currently in the process of moving the site to Netlify.",
-    "link": "https://cmw-kw.org",
+    "link": "https://cmw-kw.netlify.app/",
     "fontsize": "1em",
     "top": "20%",
     "left": "35%"

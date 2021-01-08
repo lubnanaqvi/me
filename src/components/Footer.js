@@ -65,7 +65,7 @@ const Footer = () => {
         <StyledLink href="mailto:lubnanaqvi11@gmail.com">Email me</StyledLink>
         <br />
         <br />
-        &copy; 2020 Lubna Naqvi - {iconsList}
+        &copy; {new Date().getFullYear()} Lubna Naqvi - {iconsList}
       </ForegroundDiv>
       {animatedCircles}
     </StyledFooter>

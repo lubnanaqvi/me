@@ -1,27 +1,28 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+const StyledDiv = styled.div`
+  display: inline-block;
+  vertical-align: middle;
+  height: 300px;
+  width: 45%;
+  margin: auto;
+`;
+const StyledPath = styled.path`
+  stroke: white;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke-dasharray: 0px;
+  stroke-dashoffset: 0px;
+`;
 const AnimatedDecor = ({ pathData }) => {
-  const StyledDiv = styled.div`
-    display: inline-block;
-    vertical-align: middle;
-    height: 300px;
-    width: 45%;
-    margin: auto;
-  `;
-  const StyledPath = styled.path`
-    stroke: white;
-    stroke-width: 2px;
-    fill: transparent;
-    stroke-dasharray: 0px;
-    stroke-dashoffset: 0px;
-  `;
+  console.log("hello");
   const deco = pathData.map((p, i) => {
     return (
       <StyledPath
         style={{
           strokeDasharray: 1000,
           strokeDashoffset: 100,
-          animation: `dPath 5s ease-out ${p.delay}s forwards infinite`
+          animation: `dPath 5s ease-out ${p.delay}s forwards infinite`,
         }}
         d={p.path}
         key={i}
@@ -41,7 +42,7 @@ const AnimatedDecor = ({ pathData }) => {
         x="0px"
         y="0px"
         viewBox={
-          viewBoxHorizontalOffset + ' 0 ' + viewBoxWidth + ' ' + viewBoxHeight
+          viewBoxHorizontalOffset + " 0 " + viewBoxWidth + " " + viewBoxHeight
         }
       >
         {deco}
